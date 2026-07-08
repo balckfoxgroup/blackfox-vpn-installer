@@ -28,7 +28,7 @@
 | Telegram Channel | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
 | Roadmap (EN) | [docs/ROADMAP.en.md](docs/ROADMAP.en.md) |
 | Whitepaper (EN) | [docs/WHITEPAPER.en.md](docs/WHITEPAPER.en.md) |
-| Quick Start (PDF) | [Quick Start - شروع سریع.pdf](Quick%20Start%20-%20شروع%20سریع.pdf) |
+| Quick Start (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 
 **Current version:** 1.3.0 (Build 194)
 
@@ -45,7 +45,7 @@
 | کانال تلگرام | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
 | نقشه راه (فارسی) | [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md) |
 | وایت‌پیپر (فارسی) | [docs/WHITEPAPER.fa.md](docs/WHITEPAPER.fa.md) |
-| راهنمای سریع (PDF) | [Quick Start - شروع سریع.pdf](Quick%20Start%20-%20شروع%20سریع.pdf) |
+| راهنمای سریع (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 
 **نسخه فعلی:** 1.3.0 (Build 194)
 
