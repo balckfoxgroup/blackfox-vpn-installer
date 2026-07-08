@@ -4,7 +4,7 @@
 
 # Whitepaper — Black Fox Vpn Installer
 
-**Version:** 1.3.0 | **Build:** 194
+**Version:** 1.3.0 | **Build:** 195
 
 [نسخه فارسی](WHITEPAPER.fa.md)
 
@@ -176,6 +176,8 @@ Key files:
 | Website | [foxnext.net](https://foxnext.net) |
 | Download | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 | Telegram | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
+| GitHub | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
+| Email | support@foxnext.net |
 | Roadmap | [ROADMAP.en.md](ROADMAP.en.md) |
 
 ---

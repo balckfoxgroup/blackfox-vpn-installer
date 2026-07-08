@@ -4,7 +4,7 @@
 
 # نقشه راه — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 194 | **تاریخ:** ۲۰۲۶
+**نسخه:** 1.3.0 | **Build:** 195 | **تاریخ:** ۲۰۲۶
 
 [English version](ROADMAP.en.md)
 
@@ -37,6 +37,7 @@
 | آپدیت از foxnext.net / blackfoxupdate.ir | ✅ |
 | CDN: Arvan, Cloudflare, Bunny, KeyCDN, Gcore | ✅ |
 | ثبت‌نام و لایسنس USDT | ✅ |
+| مخزن گیت‌هاب + لینک Contact | ✅ |
 
 ---
 
@@ -104,6 +105,8 @@
 - وب‌سایت: [foxnext.net](https://foxnext.net)
 - دانلود: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
 - تلگرام: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
+- گیت‌هاب: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
+- ایمیل: support@foxnext.net
 
 ---
 

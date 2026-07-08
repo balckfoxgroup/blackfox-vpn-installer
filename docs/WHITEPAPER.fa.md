@@ -4,7 +4,7 @@
 
 # وایت‌پیپر — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 194
+**نسخه:** 1.3.0 | **Build:** 195
 
 [English version](WHITEPAPER.en.md)
 
@@ -176,6 +176,8 @@ Initial Server Setup → Connect SSH → Full Deploy → Exit Servers → Config
 | وب‌سایت | [foxnext.net](https://foxnext.net) |
 | دانلود | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 | تلگرام | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
+| گیت‌هاب | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
+| ایمیل | support@foxnext.net |
 | نقشه راه | [ROADMAP.fa.md](ROADMAP.fa.md) |
 
 ---

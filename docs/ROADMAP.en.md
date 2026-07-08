@@ -4,7 +4,7 @@
 
 # Roadmap — Black Fox Vpn Installer
 
-**Version:** 1.3.0 | **Build:** 194 | **Date:** 2026
+**Version:** 1.3.0 | **Build:** 195 | **Date:** 2026
 
 [نسخه فارسی](ROADMAP.fa.md)
 
@@ -37,6 +37,7 @@ Deliver the simplest way to deploy multi-location commercial and personal VPN in
 | Updates via foxnext.net / blackfoxupdate.ir | ✅ |
 | CDN: Arvan, Cloudflare, Bunny, KeyCDN, Gcore | ✅ |
 | USDT license registration | ✅ |
+| GitHub repository + Contact tab link | ✅ |
 
 ---
 
@@ -104,6 +105,8 @@ Deliver the simplest way to deploy multi-location commercial and personal VPN in
 - Website: [foxnext.net](https://foxnext.net)
 - Download: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
 - Telegram: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
+- GitHub: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
+- Email: support@foxnext.net
 
 ---
 
