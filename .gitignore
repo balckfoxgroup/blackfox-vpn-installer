@@ -1,0 +1,25 @@
+# Binaries
+*.exe
+*.zip
+
+# Secrets
+.env
+*.pem
+**/auth.json
+**/PAS/
+
+# Build artifacts
+dist/
+Updates/
+Downloads/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.cursor/
+.vscode/
+
+# Large local docs cache
+docs-assets/quick-start.html
+
+# Keep published docs only in docs/
