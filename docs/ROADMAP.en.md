@@ -38,6 +38,9 @@ Deliver the simplest way to deploy multi-location commercial and personal VPN in
 | CDN: Arvan, Cloudflare, Bunny, KeyCDN, Gcore | ✅ |
 | USDT license registration | ✅ |
 | GitHub repository + Contact tab link | ✅ |
+| **BlackFox Vpn Android** (v0.4.12) | ✅ |
+| macOS desktop app | 🔜 Coming soon |
+| Black Fox Config Builder (Android) | 🔜 Coming soon |
 
 ---
 
@@ -76,7 +79,8 @@ Deliver the simplest way to deploy multi-location commercial and personal VPN in
 
 ## Phase 4 — Platform Expansion (2027+)
 
-- macOS version (under review — see `README-MAC.md`)
+- **macOS version** — coming soon (see `README-MAC.md`)
+- **Black Fox Config Builder for Android** — coming soon
 - Web management panel for multiple servers
 - Telegram bot integration (`@BlackFoxVpn_bot`)
 
@@ -103,7 +107,8 @@ Deliver the simplest way to deploy multi-location commercial and personal VPN in
 ## Links
 
 - Website: [foxnext.net](https://foxnext.net)
-- Download: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
+- Download Windows: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
+- Download Android: [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 - Telegram: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
 - GitHub: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
 - Email: support@foxnext.net

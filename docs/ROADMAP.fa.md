@@ -38,6 +38,9 @@
 | CDN: Arvan, Cloudflare, Bunny, KeyCDN, Gcore | ✅ |
 | ثبت‌نام و لایسنس USDT | ✅ |
 | مخزن گیت‌هاب + لینک Contact | ✅ |
+| **BlackFox Vpn Android** (نسخه 0.4.12) | ✅ |
+| نسخه macOS | 🔜 به‌زودی |
+| Black Fox Config Builder (اندروید) | 🔜 به‌زودی |
 
 ---
 
@@ -76,7 +79,8 @@
 
 ## فاز ۴ — گسترش پلتفرم (2027+)
 
-- نسخه macOS (در حال بررسی — `README-MAC.md`)
+- **نسخه macOS** — به‌زودی (`README-MAC.md`)
+- **Black Fox Config Builder برای اندروید** — به‌زودی
 - پنل وب مدیریت چند سرور
 - یکپارچه‌سازی با ربات تلگرام `@BlackFoxVpn_bot`
 
@@ -103,7 +107,8 @@
 ## لینک‌های مفید
 
 - وب‌سایت: [foxnext.net](https://foxnext.net)
-- دانلود: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
+- دانلود ویندوز: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
+- دانلود اندروید: [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 - تلگرام: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
 - گیت‌هاب: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
 - ایمیل: support@foxnext.net
