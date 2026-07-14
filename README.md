@@ -23,8 +23,8 @@
 
 | Platform | App | Status |
 |----------|-----|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 195) |
-| Android | **BlackFox Vpn Android** | **Now available** — v0.4.12 (Build 16) |
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
+| Android | **BlackFox Vpn Android** | **Now available** — v0.4.13 (Build 20) |
 | macOS | Black Fox Vpn | Coming soon |
 | Android | Black Fox Config Builder | Coming soon |
 
@@ -48,13 +48,15 @@
 | Quick Start (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 | Android docs | [Mobile/README.md](Mobile/README.md) |
 
-**Current version (Windows):** 1.3.0 (Build 195)
+**Current version (Windows):** 1.3.0 (Build 200)
 
-**BlackFox Vpn Android:** 0.4.12 (Build 16) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+**BlackFox Vpn Android:** 0.4.13 (Build 20) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
 **Coming soon:** macOS desktop app · Black Fox Config Builder for Android
 
-**Build 195:** GitHub repository link added on the Contact tab (below email).
+**Build 200:** Central Server Setup auto-detects known centrals; removed Manage central servers and Test SSH; renamed Initial Server Setup.
+
+**Build 20 (Android):** Central Server Setup auto-detect; removed manager and Test SSH buttons.
 
 ---
 
@@ -74,15 +76,17 @@
 | راهنمای سریع (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 | مستندات اندروید | [Mobile/README.md](Mobile/README.md) |
 
-**نسخه فعلی (ویندوز):** 1.3.0 (Build 195)
+**نسخه فعلی (ویندوز):** 1.3.0 (Build 200)
 
-**BlackFox Vpn Android:** 0.4.12 (Build 16) — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+**BlackFox Vpn Android:** 0.4.13 (Build 20) — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
 **به‌زودی:** نسخه macOS · Black Fox Config Builder برای اندروید
 
 > نسخه‌های macOS به‌زودی منتشر خواهند شد. برای اطلاع از آخرین به‌روزرسانی‌ها، سایت را دنبال کنید.
 
-**Build 195:** لینک مخزن گیت‌هاب به تب Contact (زیر ایمیل) اضافه شد.
+**Build 200:** Center Server Setup به‌صورت خودکار سرورهای مرکزی شناخته‌شده را تشخیص می‌دهد؛ دکمه‌های Manage central servers و Test SSH حذف شد؛ Initial Server Setup به Center Server Setup تغییر نام یافت.
+
+**Build 20 (اندروید):** Center Server Setup با تشخیص خودکار؛ حذف دکمه‌های manager و Test SSH.
 
 ---
 
