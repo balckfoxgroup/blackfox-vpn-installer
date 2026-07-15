@@ -137,42 +137,29 @@ Black Fox مجموعه ابزارهای مدیریت و راه‌اندازی س
 
 ### Android — BlackFox Vpn Android
 
-<p align="center"><strong>Choose Mode (English & Persian)</strong></p>
+<p align="center"><strong>Overview (English & Persian)</strong></p>
 <p align="center">
-  <img src="docs/assets/android-vpn/choose-mode-duo.png" alt="BlackFox Vpn Android — Choose Mode" width="420">
+  <img src="docs/assets/android-vpn/choose-mode-duo.png" alt="BlackFox Vpn Android — Choose Mode" width="32%">
+  <img src="docs/assets/android-vpn/basic-mode-duo.png" alt="BlackFox Vpn Android — Basic Mode" width="32%">
+  <img src="docs/assets/android-vpn/pro-mode-duo.png" alt="BlackFox Vpn Android — Pro Mode" width="32%">
 </p>
-
-<p align="center"><strong>Basic Mode (English & Persian)</strong></p>
-<p align="center">
-  <img src="docs/assets/android-vpn/basic-mode-duo.png" alt="BlackFox Vpn Android — Basic Mode" width="420">
-</p>
-
-<p align="center"><strong>Pro Mode (English & Persian)</strong></p>
-<p align="center">
-  <img src="docs/assets/android-vpn/pro-mode-duo.png" alt="BlackFox Vpn Android — Pro Mode" width="420">
-</p>
+<p align="center"><em>Choose Mode · Basic Mode · Pro Mode</em></p>
 
 <p align="center"><strong>English screens</strong></p>
 <p align="center">
-  <img src="docs/assets/android-vpn/en/choose-language.jpg" alt="Choose language" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/en/choose-mode.jpg" alt="Choose mode" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/en/basic-mode.jpg" alt="Basic mode" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/en/pro-mode.jpg" alt="Pro mode" width="192">
+  <img src="docs/assets/android-vpn/en/choose-language.jpg" alt="Choose language" width="24%">
+  <img src="docs/assets/android-vpn/en/choose-mode.jpg" alt="Choose mode" width="24%">
+  <img src="docs/assets/android-vpn/en/basic-mode.jpg" alt="Basic mode" width="24%">
+  <img src="docs/assets/android-vpn/en/pro-mode.jpg" alt="Pro mode" width="24%">
 </p>
 <p align="center"><em>Choose language · Choose mode · Basic Mode · Pro Mode</em></p>
 
 <p align="center"><strong>Persian screens</strong></p>
 <p align="center">
-  <img src="docs/assets/android-vpn/fa/choose-language.jpg" alt="انتخاب زبان" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/fa/choose-mode.jpg" alt="انتخاب حالت" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/fa/basic-mode.jpg" alt="Basic Mode فارسی" width="192">
-  &nbsp;&nbsp;
-  <img src="docs/assets/android-vpn/fa/pro-mode.jpg" alt="Pro Mode فارسی" width="192">
+  <img src="docs/assets/android-vpn/fa/choose-language.jpg" alt="انتخاب زبان" width="24%">
+  <img src="docs/assets/android-vpn/fa/choose-mode.jpg" alt="انتخاب حالت" width="24%">
+  <img src="docs/assets/android-vpn/fa/basic-mode.jpg" alt="Basic Mode فارسی" width="24%">
+  <img src="docs/assets/android-vpn/fa/pro-mode.jpg" alt="Pro Mode فارسی" width="24%">
 </p>
 <p align="center"><em>انتخاب زبان · انتخاب حالت · Basic Mode · Pro Mode</em></p>
 
@@ -180,25 +167,19 @@ Black Fox مجموعه ابزارهای مدیریت و راه‌اندازی س
 
 ### Android — Black Fox Config Builder
 
-<p align="center"><strong>Panel connection & single config (English)</strong></p>
+<p align="center"><strong>English screens</strong></p>
 <p align="center">
-  <img src="docs/assets/config-builder/en-connection-single.png" alt="Black Fox Config Builder — connection and single config" width="420">
+  <img src="docs/assets/config-builder/en-connection-single.png" alt="Black Fox Config Builder — connection and single config" width="48%">
+  <img src="docs/assets/config-builder/en-bulk-settings.png" alt="Black Fox Config Builder — bulk config and settings" width="48%">
 </p>
+<p align="center"><em>Panel connection & single config · Bulk config & settings</em></p>
 
-<p align="center"><strong>Bulk config & settings (English)</strong></p>
+<p align="center"><strong>Persian screens</strong></p>
 <p align="center">
-  <img src="docs/assets/config-builder/en-bulk-settings.png" alt="Black Fox Config Builder — bulk config and settings" width="420">
+  <img src="docs/assets/config-builder/fa-language-single.png" alt="Black Fox Config Builder — زبان و ساخت کانفیگ تکی" width="48%">
+  <img src="docs/assets/config-builder/fa-bulk-settings.png" alt="Black Fox Config Builder — ساخت گروهی و تنظیمات" width="48%">
 </p>
-
-<p align="center"><strong>Language & single config (Persian)</strong></p>
-<p align="center">
-  <img src="docs/assets/config-builder/fa-language-single.png" alt="Black Fox Config Builder — زبان و ساخت کانفیگ تکی" width="420">
-</p>
-
-<p align="center"><strong>Bulk config & settings (Persian)</strong></p>
-<p align="center">
-  <img src="docs/assets/config-builder/fa-bulk-settings.png" alt="Black Fox Config Builder — ساخت گروهی و تنظیمات" width="420">
-</p>
+<p align="center"><em>انتخاب زبان و کانفیگ تکی · ساخت گروهی و تنظیمات</em></p>
 
 ---
 
