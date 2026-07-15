@@ -13,6 +13,7 @@
   <a href="https://foxnext.net">Website</a> •
   <a href="https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe">Windows</a> •
   <a href="https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk">Android</a> •
+  <a href="https://foxnext.net/downloads/Black-Fox-Config-Builder.apk">Config Builder</a> •
   <a href="https://t.me/blackFoxVPNN">Telegram</a> •
   <a href="https://github.com/balckfoxgroup/blackfox-vpn-installer">GitHub</a>
 </p>
@@ -26,7 +27,7 @@
 | Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
 | Android | **BlackFox Vpn Android** | **Now available** — v0.4.13 (Build 20) |
 | macOS | Black Fox Vpn | Coming soon |
-| Android | Black Fox Config Builder | Coming soon |
+| Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 6) |
 
 > **macOS versions will be released soon. Stay tuned for upcoming updates.**
 
@@ -41,6 +42,7 @@
 | Website | [foxnext.net](https://foxnext.net) |
 | Download Windows | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 | Download Android | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Download Config Builder | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
 | Telegram Channel | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
 | GitHub Repository | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
 | Roadmap (EN) | [docs/ROADMAP.en.md](docs/ROADMAP.en.md) |
@@ -52,11 +54,15 @@
 
 **BlackFox Vpn Android:** 0.4.13 (Build 20) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
-**Coming soon:** macOS desktop app · Black Fox Config Builder for Android
+**Black Fox Config Builder (Android):** 1.1.3 (Build 6) — [Download APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)
+
+**Coming soon:** macOS desktop app
 
 **Build 200:** Central Server Setup auto-detects known centrals; removed Manage central servers and Test SSH; renamed Initial Server Setup.
 
 **Build 20 (Android):** Central Server Setup auto-detect; removed manager and Test SSH buttons.
+
+**Build 6 (Config Builder):** Dual-server remote feed (blackfoxupdate.ir + foxnext.net) for version.json, wallet.json, news.json, and APK download.
 
 ---
 
@@ -69,6 +75,7 @@
 | وب‌سایت | [foxnext.net](https://foxnext.net) |
 | دانلود ویندوز | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 | دانلود اندروید | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| دانلود Config Builder | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
 | کانال تلگرام | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
 | مخزن گیت‌هاب | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
 | نقشه راه (فارسی) | [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md) |
@@ -80,13 +87,17 @@
 
 **BlackFox Vpn Android:** 0.4.13 (Build 20) — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
-**به‌زودی:** نسخه macOS · Black Fox Config Builder برای اندروید
+**Black Fox Config Builder (اندروید):** 1.1.3 (Build 6) — [دانلود APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)
+
+**به‌زودی:** نسخه macOS
 
 > نسخه‌های macOS به‌زودی منتشر خواهند شد. برای اطلاع از آخرین به‌روزرسانی‌ها، سایت را دنبال کنید.
 
 **Build 200:** Center Server Setup به‌صورت خودکار سرورهای مرکزی شناخته‌شده را تشخیص می‌دهد؛ دکمه‌های Manage central servers و Test SSH حذف شد؛ Initial Server Setup به Center Server Setup تغییر نام یافت.
 
 **Build 20 (اندروید):** Center Server Setup با تشخیص خودکار؛ حذف دکمه‌های manager و Test SSH.
+
+**Build 6 (Config Builder):** فید ریموت دو سرور (blackfoxupdate.ir + foxnext.net) برای version.json، wallet.json، news.json و دانلود APK.
 
 ---
 
