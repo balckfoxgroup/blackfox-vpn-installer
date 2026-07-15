@@ -35,7 +35,11 @@
 
 ## English
 
-**Black Fox Vpn Installer** is a Windows desktop application that automates multi-location VPN infrastructure deployment using WireGuard and the 3X-UI panel.
+### Black Fox Vpn Installer & BlackFox Vpn Android
+
+**Automatic 3X-UI (Sanaei) installation.**
+
+Black Fox is a suite of server management and deployment tools — not a simple VPN client. This software suite is designed for environments where access to the global internet is limited, helping you deploy and manage your own multi-location VPN infrastructure without deep Linux expertise. From Windows or Android, you can automatically install the 3X-UI (Sanaei) panel, WireGuard, and many other features on Linux servers. The solution is optimized for networks with communication restrictions and special routing requirements.
 
 | Resource | Link |
 |----------|------|
@@ -54,6 +58,10 @@
 
 **BlackFox Vpn Android:** 0.4.13 (Build 20) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
+### Black Fox Config Builder (Android)
+
+An app for creating single and bulk configs without logging into the 3X-UI panel in a browser the classic way. Simple and easy to use.
+
 **Black Fox Config Builder (Android):** 1.1.3 (Build 6) — [Download APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)
 
 **Coming soon:** macOS desktop app
@@ -68,7 +76,11 @@
 
 ## فارسی
 
-**Black Fox Vpn Installer** یک برنامه ویندوزی برای راه‌اندازی خودکار زیرساخت VPN چندلوکیشنی با WireGuard و پنل 3X-UI است.
+### Black Fox Vpn Installer و BlackFox Vpn Android
+
+**نصب خودکار 3X-UI (سنایی)**
+
+Black Fox مجموعه ابزارهای مدیریت و راه‌اندازی سرور است، نه یک کلاینت VPN ساده. این مجموعه نرم‌افزار برای شرایطی طراحی شده که دسترسی به اینترنت جهانی محدود است و به شما کمک می‌کند بدون نیاز به دانش عمیق لینوکس، زیرساخت VPN چندلوکیشن خود را راه‌اندازی و مدیریت کنید. با آن می‌توانید از ویندوز یا اندروید، پنل 3X-UI (سنایی) و WireGuard و بسیاری امکانات دیگر را به‌صورت خودکار روی سرورهای لینوکس نصب کنید. این راهکار برای شبکه‌هایی با محدودیت‌های ارتباطی و مسیریابی ویژه بهینه شده است.
 
 | منبع | لینک |
 |------|------|
@@ -86,6 +98,10 @@
 **نسخه فعلی (ویندوز):** 1.3.0 (Build 200)
 
 **BlackFox Vpn Android:** 0.4.13 (Build 20) — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+
+### Black Fox Config Builder (اندروید)
+
+برنامه‌ای برای ساخت کانفیگ تکی و گروهی بدون لاگین کردن به پنل 3X-UI در مرورگر به شیوه کلاسیک. کاربری ساده و آسان.
 
 **Black Fox Config Builder (اندروید):** 1.1.3 (Build 6) — [دانلود APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)
 
