@@ -103,14 +103,85 @@
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/assets/page-0.png" alt="Basic vs Pro Mode" width="700">
-</p>
+### Windows — Black Fox Vpn Installer
 
 <p align="center">
-  <img src="docs/assets/basic-dashboard.png" alt="Basic Mode Dashboard" width="700">
+  <img src="docs/assets/page-0.png" alt="Windows — Basic vs Pro Mode" width="700">
+</p>
+<p align="center"><em>Basic Mode vs Pro Mode</em></p>
+
+<p align="center">
+  <img src="docs/assets/basic-dashboard.png" alt="Windows — Basic Mode dashboard" width="700">
   &nbsp;&nbsp;
-  <img src="docs/assets/pro-operations.png" alt="Pro Mode Dashboard" width="700">
+  <img src="docs/assets/pro-operations.png" alt="Windows — Pro Mode dashboard" width="700">
+</p>
+<p align="center"><em>Basic Mode · Pro Mode</em></p>
+
+---
+
+### Android — BlackFox Vpn Android
+
+<p align="center"><strong>Choose Mode (English & Persian)</strong></p>
+<p align="center">
+  <img src="docs/assets/android-vpn/choose-mode-duo.png" alt="BlackFox Vpn Android — Choose Mode" width="700">
+</p>
+
+<p align="center"><strong>Basic Mode (English & Persian)</strong></p>
+<p align="center">
+  <img src="docs/assets/android-vpn/basic-mode-duo.png" alt="BlackFox Vpn Android — Basic Mode" width="700">
+</p>
+
+<p align="center"><strong>Pro Mode (English & Persian)</strong></p>
+<p align="center">
+  <img src="docs/assets/android-vpn/pro-mode-duo.png" alt="BlackFox Vpn Android — Pro Mode" width="700">
+</p>
+
+<p align="center"><strong>English screens</strong></p>
+<p align="center">
+  <img src="docs/assets/android-vpn/en/choose-language.jpg" alt="Choose language" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/en/choose-mode.jpg" alt="Choose mode" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/en/basic-mode.jpg" alt="Basic mode" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/en/pro-mode.jpg" alt="Pro mode" width="320">
+</p>
+<p align="center"><em>Choose language · Choose mode · Basic Mode · Pro Mode</em></p>
+
+<p align="center"><strong>Persian screens</strong></p>
+<p align="center">
+  <img src="docs/assets/android-vpn/fa/choose-language.jpg" alt="انتخاب زبان" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/fa/choose-mode.jpg" alt="انتخاب حالت" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/fa/basic-mode.jpg" alt="Basic Mode فارسی" width="320">
+  &nbsp;&nbsp;
+  <img src="docs/assets/android-vpn/fa/pro-mode.jpg" alt="Pro Mode فارسی" width="320">
+</p>
+<p align="center"><em>انتخاب زبان · انتخاب حالت · Basic Mode · Pro Mode</em></p>
+
+---
+
+### Android — Black Fox Config Builder
+
+<p align="center"><strong>Panel connection & single config (English)</strong></p>
+<p align="center">
+  <img src="docs/assets/config-builder/en-connection-single.png" alt="Black Fox Config Builder — connection and single config" width="700">
+</p>
+
+<p align="center"><strong>Bulk config & settings (English)</strong></p>
+<p align="center">
+  <img src="docs/assets/config-builder/en-bulk-settings.png" alt="Black Fox Config Builder — bulk config and settings" width="700">
+</p>
+
+<p align="center"><strong>Language & single config (Persian)</strong></p>
+<p align="center">
+  <img src="docs/assets/config-builder/fa-language-single.png" alt="Black Fox Config Builder — زبان و ساخت کانفیگ تکی" width="700">
+</p>
+
+<p align="center"><strong>Bulk config & settings (Persian)</strong></p>
+<p align="center">
+  <img src="docs/assets/config-builder/fa-bulk-settings.png" alt="Black Fox Config Builder — ساخت گروهی و تنظیمات" width="700">
 </p>
 
 ---
