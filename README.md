@@ -15,7 +15,7 @@
   <a href="https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk">Android</a> •
   <a href="https://github.com/balckfoxgroup/blackfox-config-builder">Config Builder</a> •
   <a href="https://t.me/blackFoxVPNN">Telegram</a> •
-  <a href="https://github.com/balckfoxgroup/blackfox-vpn-installer">GitHub</a>
+  <a href="https://github.com/balckfoxgroup">GitHub</a>
 </p>
 
 ---
@@ -48,11 +48,13 @@ Black Fox is a suite of server management and deployment tools — not a simple 
 | Download Android | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
 | Download Config Builder | [GitHub repo](https://github.com/balckfoxgroup/blackfox-config-builder) · [APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
 | Telegram Channel | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
-| GitHub Repository | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
+| GitHub | [balckfoxgroup](https://github.com/balckfoxgroup) |
 | Roadmap (EN) | [docs/ROADMAP.en.md](docs/ROADMAP.en.md) |
 | Whitepaper (EN) | [docs/WHITEPAPER.en.md](docs/WHITEPAPER.en.md) |
 | Quick Start (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 | Android docs | [Mobile/README.md](Mobile/README.md) |
+
+**Global language support:** Full 10-language support is available across all current app editions and the website (`foxnext.net`): English, Persian (Farsi), Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, and Hindi.
 
 **Current version (Windows):** 1.3.0 (Build 200)
 
@@ -64,7 +66,7 @@ Black Fox is a suite of server management and deployment tools — not a simple 
 
 **Build 200:** Central Server Setup auto-detects known centrals; removed Manage central servers and Test SSH; renamed Initial Server Setup.
 
-**Build 20 (Android):** Central Server Setup auto-detect; removed manager and Test SSH buttons.
+**Build 20 (Android):** Contact page GitHub updated to `https://github.com/balckfoxgroup` in all languages; localization catalogs refreshed for app + site; Android release artifacts rebuilt.
 
 ---
 
@@ -157,7 +159,7 @@ Black Fox مجموعه ابزارهای مدیریت و راه‌اندازی س
 
 - Telegram: [https://t.me/blackFoxVPNN](https://t.me/blackFoxVPNN)
 - Website: [https://foxnext.net](https://foxnext.net)
-- GitHub: [https://github.com/balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
+- GitHub: [https://github.com/balckfoxgroup](https://github.com/balckfoxgroup)
 - Email: support@foxnext.net
 
 © Black Fox Security Team
