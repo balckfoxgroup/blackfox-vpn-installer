@@ -24,10 +24,10 @@
 
 | Platform | App | Status |
 |----------|-----|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
-| Android | **BlackFox Vpn Android** | **Now available** — v0.4.13 (Build 20) |
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0  |
+| Android | **BlackFox Vpn Android** | **Now available** — v0.4.13 |
 | macOS | Black Fox Vpn | Coming soon |
-| Android | [Black Fox Config Builder](https://github.com/balckfoxgroup/blackfox-config-builder) | **Available** — v1.1.3 (Build 6) — [separate repo](https://github.com/balckfoxgroup/blackfox-config-builder) |
+| Android | [Black Fox Config Builder](https://github.com/balckfoxgroup/blackfox-config-builder) | **Available** — v1.1.3 — [separate repo](https://github.com/balckfoxgroup/blackfox-config-builder) |
 
 > **macOS versions will be released soon. Stay tuned for upcoming updates.**
 
@@ -37,9 +37,9 @@
 
 ### Black Fox Vpn Installer & BlackFox Vpn Android
 
-**Automatic 3X-UI (Sanaei) installation.**
+**Automatic 3X-UI installation.**
 
-Black Fox is a suite of server management and deployment tools — not a simple VPN client. This software suite is designed for environments where access to the global internet is limited, helping you deploy and manage your own multi-location VPN infrastructure without deep Linux expertise. From Windows or Android, you can automatically install the 3X-UI (Sanaei) panel, WireGuard, and many other features on Linux servers. The solution is optimized for networks with communication restrictions and special routing requirements.
+Black Fox is a suite of server management and deployment tools — not a simple VPN client. This software suite is designed for environments where access to the global internet is limited, helping you deploy and manage your own multi-location VPN infrastructure without deep Linux expertise. From Windows or Android, you can automatically install the 3X-UI  panel, WireGuard, and many other features on Linux servers. The solution is optimized for networks with communication restrictions and special routing requirements.
 
 | Resource | Link |
 |----------|------|
@@ -56,17 +56,13 @@ Black Fox is a suite of server management and deployment tools — not a simple 
 
 **Global language support:** Full 10-language support is available across all current app editions and the website (`foxnext.net`): English, Persian (Farsi), Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, and Hindi.
 
-**Current version (Windows):** 1.3.0 (Build 200)
+**Current version (Windows):** 1.3.0
 
-**BlackFox Vpn Android:** 0.4.13 (Build 20) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+**BlackFox Vpn Android:** 0.4.13 — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
-**Black Fox Config Builder (Android):** See [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder) — v1.1.3 (Build 6)
+**Black Fox Config Builder (Android):** See [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder) — v1.1.3 
 
 **Coming soon:** macOS desktop app
-
-**Build 200:** Central Server Setup auto-detects known centrals; removed Manage central servers and Test SSH; renamed Initial Server Setup.
-
-**Build 20 (Android):** Contact page GitHub updated to `https://github.com/balckfoxgroup` in all languages; localization catalogs refreshed for app + site; Android release artifacts rebuilt.
 
 ---
 
@@ -91,19 +87,16 @@ Black Fox مجموعه ابزارهای مدیریت و راه‌اندازی س
 | راهنمای سریع (PDF) | [docs/Quick-Start-Guide.pdf](docs/Quick-Start-Guide.pdf) |
 | مستندات اندروید | [Mobile/README.md](Mobile/README.md) |
 
-**نسخه فعلی (ویندوز):** 1.3.0 (Build 200)
+**نسخه فعلی (ویندوز):** 1.3.0
 
-**BlackFox Vpn Android:** 0.4.13 (Build 20) — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+**BlackFox Vpn Android:** 0.4.13 — [دانلود APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
 
-**Black Fox Config Builder (اندروید):** [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder) — نسخه 1.1.3 (Build 6)
+**Black Fox Config Builder (اندروید):** [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder) — نسخه 1.1.3
 
 **به‌زودی:** نسخه macOS
 
 > نسخه‌های macOS به‌زودی منتشر خواهند شد. برای اطلاع از آخرین به‌روزرسانی‌ها، سایت را دنبال کنید.
 
-**Build 200:** Center Server Setup به‌صورت خودکار سرورهای مرکزی شناخته‌شده را تشخیص می‌دهد؛ دکمه‌های Manage central servers و Test SSH حذف شد؛ Initial Server Setup به Center Server Setup تغییر نام یافت.
-
-**Build 20 (اندروید):** Center Server Setup با تشخیص خودکار؛ حذف دکمه‌های manager و Test SSH.
 
 ---
 
