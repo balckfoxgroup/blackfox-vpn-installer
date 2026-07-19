@@ -61,6 +61,18 @@
   - برنامه با اثرانگشت دستگاه، سابقه فعال‌سازی را از سرویس رسمی بازیابی می‌کند  
   - دیگر لازم نیست کاربر کد لایسنس را فقط برای بازیابی پس از نصب مجدد روی همان دستگاه دائماً نگهداری کند  
 
+### ابزار همراه — Black Fox Config Builder
+
+- ابزار همراه اندروید **Black Fox Config Builder** نسخه 1.1.3 Build 7  
+- دانلود: [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)  
+- ریپوی مستندات: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)  
+- شش تب: Connection · Single · Bulk · List · Settings · Contact  
+- ساخت با انتخاب چند Inbound (تکی و گروهی)  
+- حذف از پنل / حذف از لیست  
+- آپدیت ریموت دو سرور (`blackfoxupdate.ir` و `foxnext.net`)  
+- نیاز به 3X-UI **≥ 3.3.0** · اندروید API 24 به بالا · ۱۰ زبان  
+- Build 6: فید ریموت دو سرور · Build 7: نسخه فعلی منتشرشده اندروید  
+
 ### بومی‌سازی
 
 - پشتیبانی از **۱۰ زبان:** انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی و هندی  
@@ -123,7 +135,7 @@
 - [WHITEPAPER.fa.md](WHITEPAPER.fa.md)  
 - [WHITEPAPER.en.md](WHITEPAPER.en.md)  
 - [ROADMAP.en.md](ROADMAP.en.md)  
-- [Mobile/README.md](../Mobile/README.md)  
+- مستندات Config Builder: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)  
 
 ---
 

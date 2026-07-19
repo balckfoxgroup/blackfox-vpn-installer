@@ -61,6 +61,18 @@ macOS edition: **Coming Soon**
   - App restores activation from the official reactivation service using the device machine fingerprint  
   - Users no longer need to permanently keep license codes only to recover after reinstall on the same device  
 
+### Companion — Black Fox Config Builder
+
+- Android companion **Black Fox Config Builder** v1.1.3 Build 7  
+- Download: [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk)  
+- Docs repo: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)  
+- Six tabs: Connection · Single · Bulk · List · Settings · Contact  
+- Multi-inbound create (single + bulk)  
+- Delete from panel / delete from list  
+- Dual-server remote updates (`blackfoxupdate.ir` + `foxnext.net`)  
+- Requires 3X-UI **≥ 3.3.0** · Android API 24+ · 10 languages  
+- Build 6: dual-server remote feed · Build 7: current published Android release  
+
 ### Localization
 
 - **10 languages:** English, Persian, Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, Hindi  
@@ -123,7 +135,7 @@ macOS edition: **Coming Soon**
 - [WHITEPAPER.en.md](WHITEPAPER.en.md)  
 - [WHITEPAPER.fa.md](WHITEPAPER.fa.md)  
 - [ROADMAP.fa.md](ROADMAP.fa.md)  
-- [Mobile/README.md](../Mobile/README.md)  
+- Config Builder docs: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)  
 
 ---
 

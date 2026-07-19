@@ -28,9 +28,11 @@ The product goal is to remove most of the repetitive Linux, SSH, panel, DNS, and
 |---------|-------------------|------|----------|
 | Windows | **Black Fox Vpn Installer** | Full desktop operations console | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 | Android | **BlackFox Vpn Android** | Mobile operations app (Basic + Pro) | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
-| Android companion | **Black Fox Config Builder** | Config construction helper | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| Android companion | **Black Fox Config Builder** | Mobile helper to create 3X-UI client configs | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
 | Google Play | BlackFox Vpn Android listing | Distribution channel | **Coming Soon** |
 | macOS | Black Fox Vpn | Future desktop edition | **Coming Soon** |
+
+Dedicated Config Builder documentation: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)
 
 ---
 
@@ -141,7 +143,42 @@ Android Pro currently focuses on core topology operations and Move Central; Wind
 
 ---
 
-## 7. Localization
+## 7. Black Fox Config Builder
+
+**Black Fox Config Builder** is the Android companion for day-to-day 3X-UI config creation on a phone.
+
+It does **not** deploy servers. Operators still use Black Fox Vpn Installer / BlackFox Vpn Android for Basic/Pro infrastructure, then paste **Panel Login Info** into Config Builder.
+
+### Current release
+
+| Item | Value |
+|------|-------|
+| Full product name | Black Fox Config Builder |
+| Version | **1.1.3 (Build 7)** |
+| Package | `com.blackfoxvpnn.configbuilder` |
+| Download | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| Min Android | API 24 |
+| Min panel | 3X-UI **3.3.0+** |
+
+### App surface (six tabs)
+
+1. **Connection** — Panel URL / user / pass / optional API Key / optional Sub URI  
+2. **Single** — One config with multi-inbound select, VLESS + sub links, QR codes  
+3. **Bulk** — Many configs with progress and stop  
+4. **List** — Copy link, delete from panel, delete from list  
+5. **Settings** — 10 languages, dual-host updates, force update, activity log  
+6. **Contact** — Website, email, GitHub, Telegram  
+
+### Published build notes
+
+- **Build 6:** Dual-server remote feed (`blackfoxupdate.ir` + `foxnext.net`) for version / wallet / news / APK  
+- **Build 7:** Current published Android release with the full six-tab workflow, multi-inbound creation, delete-from-panel, and 10-language coverage  
+
+Config Builder does **not** implement Installer license registration / TX unlock inside the app.
+
+---
+
+## 8. Localization
 
 BlackFox Group applications and the website support **10 languages**:
 
@@ -149,7 +186,7 @@ English, Persian, Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainia
 
 ---
 
-## 8. Privacy and updates
+## 9. Privacy and updates
 
 - Privacy Policy EN: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
 - Privacy Policy FA: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
@@ -159,7 +196,7 @@ Treat the published Privacy Policy pages as the authoritative source.
 
 ---
 
-## 9. What this suite is not
+## 10. What this suite is not
 
 - Not a simple end-user VPN client  
 - Not a claim that Google Play is already live  
@@ -168,13 +205,13 @@ Treat the published Privacy Policy pages as the authoritative source.
 
 ---
 
-## 10. Related documents
+## 11. Related documents
 
 - [README.md](../README.md)  
 - [ROADMAP.en.md](ROADMAP.en.md)  
 - [ROADMAP.fa.md](ROADMAP.fa.md)  
 - [WHITEPAPER.fa.md](WHITEPAPER.fa.md)  
-- [Mobile/README.md](../Mobile/README.md)  
+- Config Builder docs: [balckfoxgroup/blackfox-config-builder](https://github.com/balckfoxgroup/blackfox-config-builder)  
 
 ---
 
