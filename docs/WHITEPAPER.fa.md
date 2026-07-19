@@ -1,10 +1,6 @@
-<p align="right">
-  <img src="assets/logo.jpg" alt="Black Fox VPN" width="120" align="left">
-</p>
-
 # وایت‌پیپر — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 195
+**نسخه:** 1.3.0 | **Build:** 200 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
 
 [English version](WHITEPAPER.en.md)
 
@@ -12,174 +8,173 @@
 
 ## ۱. خلاصه اجرایی
 
-**Black Fox Vpn Installer** یک برنامه ویندوزی تجاری است که با اتصال SSH به سرورهای لینوکس، زیرساخت VPN چندلوکیشنی را به‌صورت خودکار راه‌اندازی می‌کند.
+**Black Fox Vpn Installer** یک کلاینت VPN ساده نیست.
 
-کاربر بدون دانش تخصصی لینوکس می‌تواند:
+این محصول **مجموعه ابزارهای مدیریت و راه‌اندازی سرور** برای موارد زیر است:
 
-- سرور مرکزی با پنل 3X-UI نصب کند
-- سرورهای خروجی در کشورهای مختلف اضافه کند
-- در مد Pro، زنجیره تونل relay بسازد
-- CDN و DNS را پیکربندی کند
+- Server Deployment Automation  
+- Multi-Server Infrastructure Management  
+- VPN Infrastructure Configuration  
+- Central Server Management  
+- Tunnel Management  
+- Exit Server Management  
+- Backup and Restore (در مسیر انتقال Central Server)  
+
+خانواده محصول هم‌اکنون روی **ویندوز** و **اندروید** منتشر شده و ابزار **Config Builder** اندروید نیز در دسترس است. نسخه **macOS** در برنامه است. انتشار در **Google Play** برای اندروید به‌صورت **Coming Soon** اعلام می‌شود؛ دانلود APK از وب‌سایت رسمی فعال است.
+
+وب‌سایت رسمی: [https://foxnext.net](https://foxnext.net)
 
 ---
 
-## ۲. مسئله
+## ۲. صورت‌مسئله
 
-راه‌اندازی VPN چندلوکیشنی معمولاً نیازمند:
+راه‌اندازی زیرساخت VPN چندلوکیشن معمولاً نیازمند این کارهاست:
 
-- نصب دستی WireGuard
-- پیکربندی پنل 3X-UI
-- مدیریت SSH و فایروال
-- اتصال سرورهای خارجی به سرور مرکزی
+- نصب دستی WireGuard و مسیریابی  
+- راه‌اندازی پنل 3X-UI  
+- مدیریت SSH، فایروال و اعتبارنامه‌ها  
+- اتصال سرورهای خروجی به هاب مرکزی  
+- در صورت نیاز، اتوماسیون CDN / DNS  
 
-این فرآیند برای کاربران غیرفنی زمان‌بر و پرخطاست.
+برای اپراتورهایی که دانش عمیق لینوکس ندارند، این مسیر زمان‌بر و خطاپذیر است.
 
 ---
 
 ## ۳. راه‌حل
 
-برنامه تمام مراحل را در یک داشبورد گرافیکی یکپارچه می‌کند:
+برنامه‌های Black Fox Group عملیات پیچیده چندسروری را به جریان‌های گرافیکی قابل‌هدایت تبدیل می‌کنند.
 
-```
-Initial Server Setup → Connect SSH → Full Deploy → Exit Servers → Configure Panel
-```
+از ویندوز یا اندروید می‌توان این موارد را نصب و مدیریت کرد:
+
+- پنل 3X-UI (سنایی)  
+- WireGuard  
+- توپولوژی Exit و Tunnel  
+- اتوماسیون Domain / CDN (Pro)  
+- انتقال Central Server با حفظ تداوم کلاینت‌ها  
 
 <p align="center">
-  <img src="assets/page-0.png" alt="معماری Basic و Pro" width="650">
+  <img src="assets/page-0.png" alt="نمای Basic و Pro" width="650">
 </p>
 
 ---
 
-## ۴. معماری شبکه
+## ۴. معماری
 
-### ۴.۱ — حالت Basic
+زنجیره کلی:
 
-```
-[کاربر ویندوز] → SSH → [سرور مرکزی: WireGuard + 3X-UI]
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-              [خروجی ۱]           [خروجی ۲]
-```
-
-### ۴.۲ — حالت Pro با تونل
-
-```
-[سرور مرکزی] → [تونل ۱] → [تونل ۲] → ... → [خروجی ۱..۶]
+```text
+Central Server
+      ↓
+Tunnel Server (Pro، اختیاری)
+      ↓
+Exit Server
+      ↓
+Client Infrastructure
 ```
 
-- سرورهای تونل فقط **relay** هستند
-- سرور خروجی نقطه خروج اینترنت است (microsocks)
-- در صورت شکست WireGuard، **GRE fallback** فعال می‌شود
+### ۴.۱ Basic Mode
 
----
+برای ساختار ساده‌تر و سریع‌تر:
 
-## ۵. داشبورد Operations
+- Central Server  
+- Exit محدود  
+- Configure Panel  
 
-### Basic Mode
+### ۴.۲ Pro Mode
+
+برای زیرساخت پیشرفته چندسروری:
+
+- Central / Tunnel / Exit  
+- WireGuard + GRE  
+- Domain و CDN  
+- Move Central Server  
 
 <p align="center">
-  <img src="assets/basic-dashboard.png" alt="Basic Dashboard" width="680">
-</p>
-
-### Pro Mode
-
-<p align="center">
-  <img src="assets/pro-operations.png" alt="Pro Dashboard" width="680">
-</p>
-
----
-
-## ۶. مد Basic و Pro
-
-| ویژگی | Basic | Pro |
-|-------|-------|-----|
-| هدف | VPN شخصی | VPN تجاری |
-| کلیک پیشنهادی | ۳ | ۶ |
-| سرور خروجی | ۱ + ۲ | ۱ تا ۶ |
-| سرور تونل | ندارد | دارد |
-| دامنه / DNS | ندارد | دارد |
-| CDN | ندارد | ۶ ارائه‌دهنده |
-| کشور رایگان مرکزی | ایران، چین، روسیه | همه کشورها |
-
-<p align="center">
-  <img src="assets/page-3-1.png" alt="Basic" width="280">
-  <img src="assets/page-3-2.png" alt="Pro" width="280">
+  <img src="assets/dashboard-basic.png" alt="داشبورد Basic" width="420">
+  &nbsp;
+  <img src="assets/dashboard-pro.png" alt="داشبورد Pro" width="420">
 </p>
 
 ---
 
-## ۷. فناوری‌های اصلی
+## ۵. انتشار پلتفرم‌ها
 
-| لایه | فناوری |
-|------|--------|
-| کلاینت | Go + Fyne (Windows) |
-| تونل | WireGuard (اصلی), GRE (جایگزین) |
-| پنل | 3X-UI |
-| خروجی | microsocks |
-| ارتباط | SSH با پشتیبانی پروکسی |
-| تنظیمات | JSON محلی |
-| آپدیت | foxnext.net + blackfoxupdate.ir |
-| زبان | ۱۰ زبان |
+| پلتفرم | محصول | وضعیت |
+|--------|--------|--------|
+| Windows | Black Fox Vpn Installer v1.3.0 (Build 200) | Available |
+| Android | BlackFox Vpn Android v0.4.13 (Build 20) | Available از وب‌سایت |
+| Android | Google Play | **Coming Soon** |
+| Android | Config Builder v1.1.3 (Build 7) | Available |
+| macOS | Black Fox Vpn | Coming Soon |
 
----
+<p align="center">
+  <img src="assets/android-dashboard.png" alt="نسخه اندروید" width="520">
+</p>
 
-## ۸. امنیت
-
-- اتصال SSH با احراز هویت رمز یا کلید
-- known_hosts برای جلوگیری از MITM
-- لایسنس ماشین‌بند (Machine ID)
-- تأیید پرداخت USDT از طریق TX Hash
-- بدون ذخیره رمز SSH در لاگ
+> نسخه Android برنامه BlackFox منتشر شده است و کاربران می‌توانند آن را از وب‌سایت رسمی Black Fox Group دانلود کنند. نسخه Android به‌زودی در Google Play نیز منتشر خواهد شد.
 
 ---
 
-## ۹. مدل لایسنس
+## ۶. پشتیبانی از ۱۰ زبان
 
-| سطح | قیمت | شبکه |
-|-----|------|------|
-| Basic Full | ۳۰ USDT | BEP-20 |
-| Pro Full | ۵۰ USDT | BEP-20 |
+محصولات Black Fox Group برای مخاطب بین‌المللی طراحی شده‌اند و از **۱۰ زبان زنده دنیا** پشتیبانی می‌کنند:
 
-روش‌های فعال‌سازی: آنلاین (TX Hash)، آفلاین (کد BFXB/BFXP/BFXT)، ابزار مالک
+انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی و هندی.
 
 ---
 
-## ۱۰. جریان آپدیت
+## ۷. Domain، CDN و انتقال Central
 
-برنامه از دو سرور آپدیت استفاده می‌کند:
+- DNS: Cloudflare و ArvanCloud  
+- CDN (ویندوز Pro): ArvanCloud، Cloudflare، KeyCDN، Other CDN  
+- Move Central Server: بکاپ مسیر انتقال + انتقال خودکار کلاینت‌های پنل با هدف حفظ دسترسی  
 
-1. `http://blackfoxupdate.ir` (اصلی)
-2. `https://foxnext.net` (ثانویه)
-
-فایل‌های کلیدی:
-
-- `/version.json` — نسخه و لینک دانلود
-- `/news.json` — اخبار
-- `/wallet.json` — آدرس کیف پول
+Backup/Restore گسترده‌تر به‌عنوان ابزار مستقل در نقشه راه باقی است.
 
 ---
 
-## ۱۱. مخاطبان هدف
+## ۸. حریم خصوصی (Privacy Policy)
 
-- کاربران شخصی که VPN اختصاصی می‌خواهند
-- کسب‌وکارهایی که VPN چندکشوری نیاز دارند
-- ارائه‌دهندگان خدمات VPN
-- مدیران سرور با دانش محدود لینوکس
+سیاست حریم خصوصی به‌صورت جداگانه منتشر شده است:
+
+- فارسی: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
+- انگلیسی: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
+
+کاربران می‌توانند جزئیات مرتبط با داده و حریم خصوصی را در همان صفحه رسمی مطالعه کنند.
 
 ---
 
-## ۱۲. لینک‌ها
+## ۹. امنیت و لایسنس
+
+- احراز هویت SSH با رمز یا کلید  
+- لایسنس وابسته به دستگاه  
+- عدم ثبت رمزها در لاگ برنامه  
+- سطوح Basic / Pro با جریان USDT (قیمت به‌روز را در وب‌سایت ببینید)
+
+---
+
+## ۱۰. لینک‌ها
 
 | منبع | آدرس |
 |------|------|
 | وب‌سایت | [foxnext.net](https://foxnext.net) |
-| دانلود | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| حریم خصوصی | [foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html) |
+| دانلود ویندوز | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| دانلود اندروید | [APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Config Builder | [GitHub](https://github.com/balckfoxgroup/blackfox-config-builder) |
 | تلگرام | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
-| گیت‌هاب | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
-| ایمیل | support@foxnext.net |
 | نقشه راه | [ROADMAP.fa.md](ROADMAP.fa.md) |
 
 ---
 
-© Black Fox Security Team — 2026
+## Support the Project
+
+اگر BlackFox VPN Installer برای شما مفید است، با دادن یک Star به Repository از توسعه Black Fox Group حمایت کنید.
+
+- Star the Repository  
+- Report Bugs  
+- Suggest Features  
+- Share the Project  
+- Support the Development  
+
+© Black Fox Security Team — ۲۰۲۶

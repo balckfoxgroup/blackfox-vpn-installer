@@ -1,10 +1,6 @@
-<p align="right">
-  <img src="assets/logo.jpg" alt="Black Fox VPN" width="120" align="left">
-</p>
-
 # نقشه راه — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 195 | **تاریخ:** ۲۰۲۶
+**نسخه:** 1.3.0 | **Build:** 200 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
 
 [English version](ROADMAP.en.md)
 
@@ -12,107 +8,131 @@
 
 ## چشم‌انداز
 
-ارائه ساده‌ترین راه برای راه‌اندازی VPN چندلوکیشنی تجاری و شخصی روی سرورهای لینوکس، بدون نیاز به دانش عمیق لینوکس.
+ارائه ساده‌ترین مسیر برای راه‌اندازی و مدیریت زیرساخت VPN چندلوکیشن روی سرورهای لینوکس — بدون نیاز به دانش عمیق لینوکس.
+
+محصولات Black Fox Group **مجموعه ابزارهای مدیریت و راه‌اندازی سرور** هستند، نه یک کلاینت VPN ساده.
 
 <p align="center">
-  <img src="assets/page-0.png" alt="Basic vs Pro" width="640">
+  <img src="assets/page-0.png" alt="Basic Mode در برابر Pro Mode" width="640">
 </p>
 
 ---
 
-## وضعیت فعلی — نسخه 1.3.0
+## راهنمای وضعیت
 
-### تکمیل‌شده
-
-| بخش | وضعیت |
-|-----|--------|
-| نصب WireGuard + 3X-UI | ✅ |
-| مد Basic (۳ کلیک) | ✅ |
-| مد Pro (۶ کلیک) | ✅ |
-| سرور مرکزی + خروجی ۱ تا ۶ | ✅ |
-| سرور تونل چند hop (Pro) | ✅ |
-| GRE fallback | ✅ |
-| پروکسی هوشمند SSH | ✅ |
-| ۱۰ زبان | ✅ |
-| آپدیت از foxnext.net / blackfoxupdate.ir | ✅ |
-| CDN: Arvan, Cloudflare, Bunny, KeyCDN, Gcore | ✅ |
-| ثبت‌نام و لایسنس USDT | ✅ |
-| مخزن گیت‌هاب + لینک Contact | ✅ |
-| **BlackFox Vpn Android** (نسخه 0.4.12) | ✅ |
-| نسخه macOS | 🔜 به‌زودی |
-| Black Fox Config Builder (اندروید) | 🔜 به‌زودی |
+| برچسب | معنا |
+|-------|------|
+| **Completed** | منتشر شده و در محصول فعلی موجود است |
+| **In Progress** | در حال بهبود فعال |
+| **Planned** | در نقشه راه؛ هنوز قابلیت نهایی منتشرشده نیست |
 
 ---
 
-## فاز ۱ — پایداری (Q3 2026)
+## Completed (تکمیل‌شده)
 
-| اولویت | مورد |
-|--------|------|
-| بالا | بهبود پایداری FTP و آپلود هاست ثانویه |
-| بالا | تست خودکار deploy در Basic و Pro |
-| متوسط | بهبود پیام‌های خطا در ترمینال |
-| متوسط | مستندات و Quick Start چندزبانه |
-
----
-
-## فاز ۲ — تجربه کاربری (Q4 2026)
-
-| اولویت | مورد |
-|--------|------|
-| بالا | ویزارد راه‌اندازی اولیه یکپارچه |
-| متوسط | داشبورد وضعیت real-time |
-| متوسط | پیش‌نمایش کانفیگ WireGuard در UI |
-| پایین | تم تیره/روشن قابل تنظیم |
-
----
-
-## فاز ۳ — مقیاس‌پذیری (2027)
-
-| اولویت | مورد |
-|--------|------|
-| بالا | پشتیبانی از زنجیره تونل بیشتر از ۶ hop |
-| متوسط | بکاپ و بازیابی خودکار تنظیمات |
-| متوسط | گزارش‌گیری ترافیک و uptime |
-| پایین | API مدیریت از راه دور |
+| مورد | توضیح |
+|------|--------|
+| انتشار ویندوز — Black Fox Vpn Installer | v1.3.0 (Build 200) |
+| انتشار اندروید — BlackFox Vpn Android | v0.4.13 (Build 20) |
+| Black Fox Config Builder (اندروید) | v1.1.3 (Build 7) |
+| پشتیبانی از ۱۰ زبان (اپ + وب‌سایت) | انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی، هندی |
+| Basic Mode | جریان ساده‌تر Central + Exit |
+| Pro Mode | عملیات زیرساخت چندسروری |
+| مدیریت Central Server | Setup، SSH، Full Deploy، نصب پنل |
+| مدیریت Tunnel Server (Pro) | زنجیره رله چند hop |
+| مدیریت Exit Server | Basic: ۱–۲ · Pro: ۱–۶ |
+| پشتیبانی WireGuard | مسیر اصلی تونل |
+| پشتیبانی GRE fallback | وقتی مسیر WireGuard قطع می‌شود |
+| مدیریت Domain و Subdomain (Pro) | Cloudflare و ArvanCloud |
+| اتوماسیون CDN (Pro، ویندوز) | ArvanCloud، Cloudflare، KeyCDN، Other CDN |
+| نصب و مدیریت خودکار 3X-UI (سنایی) | بسته embed + پیکربندی پنل |
+| انتقال Central Server (Pro) | مهاجرت زیرساخت با انتقال خودکار کلاینت‌های پنل |
+| بکاپ محلی هنگام Move Central | اسنپ‌شات در مسیر انتقال |
+| پروکسی هوشمند SSH | برای شبکه‌های محدود |
+| دو میزبان آپدیت | `foxnext.net` و `blackfoxupdate.ir` |
+| ثبت لایسنس USDT | سطوح Basic / Pro |
+| وب‌سایت رسمی | [foxnext.net](https://foxnext.net) |
+| صفحه Privacy Policy | [فارسی](https://foxnext.net/fa/privacy.html) · [انگلیسی](https://foxnext.net/en/privacy.html) |
 
 ---
 
-## فاز ۴ — گسترش پلتفرم (2027+)
+## In Progress (در حال توسعه)
 
-- **نسخه macOS** — به‌زودی (`README-MAC.md`)
-- **Black Fox Config Builder برای اندروید** — به‌زودی
-- پنل وب مدیریت چند سرور
-- یکپارچه‌سازی با ربات تلگرام `@BlackFoxVpn_bot`
+| مورد | توضیح |
+|------|--------|
+| بهبود تجربه Basic Mode | وضعیت واضح‌تر و جریان‌های راهنما |
+| بهبود تجربه Pro Mode | شفافیت عملیات و مسیرهای حذف/ریست امن‌تر |
+| هم‌ترازی ترجمه‌های ۱۰ زبانه | اپ‌ها و وب‌سایت |
+| نزدیک‌کردن قابلیت‌های اندروید به Pro ویندوز | CDN و برخی عملیات پیشرفته هنوز اولویت ویندوز دارند |
+| پایداری تحویل روی هاست‌ها | آپلود/آپدیت پایدارتر |
 
 ---
 
-## مدل Basic و Pro
+## Planned (برنامه‌های آینده)
+
+| مورد | توضیح |
+|------|--------|
+| نسخه macOS | به‌زودی |
+| انتشار در Google Play برای اندروید | **Coming Soon** (دانلود APK از وب‌سایت هم‌اکنون فعال است) |
+| ادامه Workflow از مراحل میانی | UI امن‌تر برای ادامه از checkpoint |
+| Backup و Restore مستقل زیرساخت | فراتر از اسنپ‌شات Move Central |
+| زنجیره تونل طولانی‌تر | مقیاس‌پذیری multi-hop |
+| گزارش ترافیک و uptime | دید عملیاتی |
+| Remote management API | کنترل برنامه‌ای |
+| ربات تلگرام | کمک عملیاتی آینده |
+
+---
+
+## ماتریس پلتفرم
+
+| پلتفرم | محصول | وضعیت |
+|--------|--------|--------|
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
+| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 20) |
+| Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
+| Android | انتشار Google Play | **Coming Soon** |
+| macOS | Black Fox Vpn | **Coming Soon** |
+
+---
+
+## Basic در برابر Pro (وضعیت فعلی)
 
 <p align="center">
-  <img src="assets/page-3-1.png" alt="Basic Mode" width="300">
-  <img src="assets/page-3-2.png" alt="Pro Mode" width="300">
+  <img src="assets/dashboard-basic.png" alt="داشبورد Basic" width="360">
+  &nbsp;
+  <img src="assets/dashboard-pro.png" alt="داشبورد Pro" width="360">
 </p>
 
-| ویژگی | Basic | Pro |
-|-------|-------|-----|
-| کلیک تا پنل | ۳ | ۶ |
-| سرور خروجی | ۱ + ۲ |1 تا 6|
-| سرور تونل | ❌ | ✅ |
-| دامنه / DNS | ❌ | ✅ |
-| CDN | ❌ | ✅ |
-| لایسنس Full | ۳۰ USDT | ۵۰ USDT |
+| قابلیت | Basic | Pro |
+|--------|-------|-----|
+| Central Server | بله | بله |
+| Exit Servers | ۱–۲ | ۱–۶ |
+| Tunnel Servers | خیر | بله |
+| Domain / DNS | خیر | بله |
+| CDN | خیر | بله (ویندوز) |
+| Move Central Server | خیر | بله |
+| WireGuard + GRE | بله | بله |
 
 ---
 
-## لینک‌های مفید
+## لینک‌ها
 
 - وب‌سایت: [foxnext.net](https://foxnext.net)
-- دانلود ویندوز: [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)
-- دانلود اندروید: [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)
+- حریم خصوصی: [foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)
+- دانلود ویندوز / اندروید / Config Builder از وب‌سایت رسمی
 - تلگرام: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
-- گیت‌هاب: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
-- ایمیل: support@foxnext.net
+- مخزن: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
 
 ---
+
+## Support the Project
+
+اگر BlackFox VPN Installer برای شما مفید است، با دادن یک Star به Repository از توسعه Black Fox Group حمایت کنید.
+
+- Star the Repository
+- Report Bugs
+- Suggest Features
+- Share the Project
+- Support the Development
 
 © Black Fox Security Team
