@@ -1,6 +1,6 @@
-# Roadmap — Black Fox Vpn Installer
+﻿# Roadmap — Black Fox Vpn Installer
 
-**Version:** 1.3.0 | **Build:** 200 | **Updated:** July 2026
+**Version:** 1.3.0 | **Build:** 202 | **Updated:** July 2026
 
 [نسخه فارسی](ROADMAP.fa.md)
 
@@ -32,8 +32,8 @@ Black Fox Group products are **server management and deployment tools**, not a s
 
 | Item | Notes |
 |------|--------|
-| Windows release — Black Fox Vpn Installer | v1.3.0 (Build 200) — [Download](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
-| Android release — BlackFox Vpn Android | v0.4.13 (Build 20) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Windows release — Black Fox Vpn Installer | v1.3.0 (Build 202) — [Download](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| Android release — BlackFox Vpn Android | v0.4.13 (Build 21) — [Download APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
 | Black Fox Config Builder (Android) | v1.1.3 (Build 7) — [APK](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) · [Repo](https://github.com/balckfoxgroup/blackfox-config-builder) |
 | 10-language support (apps + website) | English, Persian (Farsi), Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, Hindi |
 | Basic Mode | Simplified central + exit workflow |
@@ -87,8 +87,8 @@ Black Fox Group products are **server management and deployment tools**, not a s
 
 | Platform | Product | Status |
 |----------|---------|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
-| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 20) |
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 202) |
+| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 21) |
 | Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
 | Android | Google Play distribution | **Coming Soon** |
 | macOS | Black Fox Vpn | **Coming Soon** |

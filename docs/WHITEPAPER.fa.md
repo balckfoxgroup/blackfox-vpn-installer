@@ -1,6 +1,6 @@
-# وایت‌پیپر — Black Fox Vpn Installer
+﻿# وایت‌پیپر — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 200 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
+**نسخه:** 1.3.0 | **Build:** 202 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
 
 [English version](WHITEPAPER.en.md)
 
@@ -101,8 +101,8 @@ Client Infrastructure
 
 | پلتفرم | محصول | وضعیت |
 |--------|--------|--------|
-| Windows | Black Fox Vpn Installer v1.3.0 (Build 200) | Available |
-| Android | BlackFox Vpn Android v0.4.13 (Build 20) | Available از وب‌سایت |
+| Windows | Black Fox Vpn Installer v1.3.0 (Build 202) | Available |
+| Android | BlackFox Vpn Android v0.4.13 (Build 21) | Available از وب‌سایت |
 | Android | Google Play | **Coming Soon** |
 | Android | Config Builder v1.1.3 (Build 7) | Available |
 | macOS | Black Fox Vpn | Coming Soon |

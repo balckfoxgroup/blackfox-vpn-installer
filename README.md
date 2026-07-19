@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="docs/assets/logo.jpg" alt="Black Fox VPN Logo" width="96">
 </p>
 
@@ -41,8 +41,8 @@ The software is designed for environments with restricted global connectivity an
 
 | Platform | Product | Status |
 |----------|---------|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
-| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 20) |
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 202) |
+| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 21) |
 | Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
 | Android | Google Play | **Coming Soon** |
 | macOS | Black Fox Vpn | **Coming Soon** |
@@ -109,7 +109,7 @@ Pro Mode is for **advanced multi-server infrastructure**:
 **BlackFox Vpn Android is released.**
 
 - Download: [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)  
-- Current version: **0.4.13 (Build 20)**  
+- Current version: **0.4.13 (Build 21)**  
 - Google Play: **Coming Soon**  
 
 Users can download the official Android build from the Black Fox Group website today. A Google Play listing is planned and will be announced when available.
@@ -135,7 +135,7 @@ More Android notes: [Mobile/README.md](Mobile/README.md)
 ## 6. Windows Version
 
 - Product: **Black Fox Vpn Installer**  
-- Version: **1.3.0 (Build 200)**  
+- Version: **1.3.0 (Build 202)**  
 - Download: [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)  
 
 Windows remains the full desktop operations console for Basic and Pro infrastructure workflows.

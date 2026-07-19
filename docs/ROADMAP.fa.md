@@ -1,6 +1,6 @@
-# نقشه راه — Black Fox Vpn Installer
+﻿# نقشه راه — Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 200 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
+**نسخه:** 1.3.0 | **Build:** 202 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
 
 [English version](ROADMAP.en.md)
 
@@ -32,8 +32,8 @@
 
 | مورد | توضیح |
 |------|--------|
-| انتشار ویندوز — Black Fox Vpn Installer | v1.3.0 (Build 200) |
-| انتشار اندروید — BlackFox Vpn Android | v0.4.13 (Build 20) |
+| انتشار ویندوز — Black Fox Vpn Installer | v1.3.0 (Build 202) |
+| انتشار اندروید — BlackFox Vpn Android | v0.4.13 (Build 21) |
 | Black Fox Config Builder (اندروید) | v1.1.3 (Build 7) |
 | پشتیبانی از ۱۰ زبان (اپ + وب‌سایت) | انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی، هندی |
 | Basic Mode | جریان ساده‌تر Central + Exit |
@@ -87,8 +87,8 @@
 
 | پلتفرم | محصول | وضعیت |
 |--------|--------|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 200) |
-| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 20) |
+| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 202) |
+| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 21) |
 | Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
 | Android | انتشار Google Play | **Coming Soon** |
 | macOS | Black Fox Vpn | **Coming Soon** |

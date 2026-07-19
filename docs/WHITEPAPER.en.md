@@ -1,6 +1,6 @@
-# Whitepaper — Black Fox Vpn Installer
+﻿# Whitepaper — Black Fox Vpn Installer
 
-**Version:** 1.3.0 | **Build:** 200 | **Updated:** July 2026
+**Version:** 1.3.0 | **Build:** 202 | **Updated:** July 2026
 
 [نسخه فارسی](WHITEPAPER.fa.md)
 
@@ -136,8 +136,8 @@ For advanced multi-server operations:
 
 | Platform | Product | Status |
 |----------|---------|--------|
-| Windows | Black Fox Vpn Installer v1.3.0 (Build 200) | Available |
-| Android | BlackFox Vpn Android v0.4.13 (Build 20) | Available — download from [foxnext.net](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Windows | Black Fox Vpn Installer v1.3.0 (Build 202) | Available |
+| Android | BlackFox Vpn Android v0.4.13 (Build 21) | Available — download from [foxnext.net](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
 | Android | Google Play listing | **Coming Soon** |
 | Android | Black Fox Config Builder v1.1.3 (Build 7) | Available |
 | macOS | Black Fox Vpn | Coming Soon |
