@@ -1,4 +1,4 @@
-﻿# Binaries
+# Binaries
 *.exe
 *.zip
 
@@ -23,6 +23,11 @@ Thumbs.db
 docs-assets/quick-start.html
 
 # Keep published docs only in docs/
+
+# Local Android Flutter workspace (not published on GitHub)
+/Mobile/
+
+
 
 # Local Android Flutter workspace (not published on GitHub)
 /Mobile/
