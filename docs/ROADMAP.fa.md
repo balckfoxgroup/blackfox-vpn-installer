@@ -1,138 +1,130 @@
-﻿# نقشه راه — Black Fox Vpn Installer
+﻿# نقشه راه Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 202 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
+**آخرین به‌روزرسانی:** ۱۹ ژوئیه ۲۰۲۶  
+**محصول:** Black Fox Vpn Installer  
+**نسخه‌های فعلی:** ویندوز **v1.3.0 (Build 202)** · اندروید **v0.4.13 (Build 21)** · Config Builder **v1.1.3 (Build 7)**  
+**وب‌سایت:** [https://foxnext.net](https://foxnext.net)
 
-[English version](ROADMAP.en.md)
-
----
-
-## چشم‌انداز
-
-ارائه ساده‌ترین مسیر برای راه‌اندازی و مدیریت زیرساخت VPN چندلوکیشن روی سرورهای لینوکس — بدون نیاز به دانش عمیق لینوکس.
-
-محصولات Black Fox Group **مجموعه ابزارهای مدیریت و راه‌اندازی سرور** هستند، نه یک کلاینت VPN ساده.
-
-<p align="center">
-  <img src="assets/page-0.png" alt="Basic Mode در برابر Pro Mode" width="640">
-</p>
+این نقشه راه وضعیت واقعی کارهای انجام‌شده، کارهای در حال پیشرفت و کارهای برنامه‌ریزی‌شده را برای مجموعه ابزار استقرار سرور Black Fox Group (ویندوز و اندروید) شرح می‌دهد. مبنای آن کد فعلی Go ویندوز، اپ Flutter اندروید، وب‌سایت رسمی و رفتار سرویس لایسنس است.
 
 ---
 
-## راهنمای وضعیت
+## دانلودها (با نام کامل محصول)
 
-| برچسب | معنا |
-|-------|------|
-| **Completed** | منتشر شده و در محصول فعلی موجود است |
-| **In Progress** | در حال بهبود فعال |
-| **Planned** | در نقشه راه؛ هنوز قابلیت نهایی منتشرشده نیست |
+| محصول | نام فایل | لینک |
+|--------|----------|------|
+| Black Fox Vpn Installer (ویندوز) | `Black Fox Vpn-Installer-Setup.exe` | [دانلود](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| BlackFox Vpn Android | `BlackFox-VPN-Android-release.apk` | [دانلود](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Black Fox Config Builder | `Black-Fox-Config-Builder.apk` | [دانلود](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
 
----
-
-## Completed (تکمیل‌شده)
-
-| مورد | توضیح |
-|------|--------|
-| انتشار ویندوز — Black Fox Vpn Installer | v1.3.0 (Build 202) |
-| انتشار اندروید — BlackFox Vpn Android | v0.4.13 (Build 21) |
-| Black Fox Config Builder (اندروید) | v1.1.3 (Build 7) |
-| پشتیبانی از ۱۰ زبان (اپ + وب‌سایت) | انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی، هندی |
-| Basic Mode | جریان ساده‌تر Central + Exit |
-| Pro Mode | عملیات زیرساخت چندسروری |
-| مدیریت Central Server | Setup، SSH، Full Deploy، نصب پنل |
-| مدیریت Tunnel Server (Pro) | زنجیره رله چند hop |
-| مدیریت Exit Server | Basic: ۱–۲ · Pro: ۱–۶ |
-| پشتیبانی WireGuard | مسیر اصلی تونل |
-| پشتیبانی GRE fallback | وقتی مسیر WireGuard قطع می‌شود |
-| مدیریت Domain و Subdomain (Pro) | Cloudflare و ArvanCloud |
-| اتوماسیون CDN (Pro، ویندوز) | ArvanCloud، Cloudflare، KeyCDN، Other CDN |
-| نصب و مدیریت خودکار 3X-UI (سنایی) | بسته embed + پیکربندی پنل |
-| انتقال Central Server (Pro) | مهاجرت زیرساخت با انتقال خودکار کلاینت‌های پنل |
-| بکاپ محلی هنگام Move Central | اسنپ‌شات در مسیر انتقال |
-| پروکسی هوشمند SSH | برای شبکه‌های محدود |
-| دو میزبان آپدیت | `foxnext.net` و `blackfoxupdate.ir` |
-| ثبت لایسنس USDT | سطوح Basic / Pro |
-| وب‌سایت رسمی | [foxnext.net](https://foxnext.net) |
-| صفحه Privacy Policy | [فارسی](https://foxnext.net/fa/privacy.html) · [انگلیسی](https://foxnext.net/en/privacy.html) |
+انتشار BlackFox Vpn Android در Google Play: **به‌زودی**  
+نسخه macOS: **به‌زودی**
 
 ---
 
-## In Progress (در حال توسعه)
+## انجام‌شده
 
-| مورد | توضیح |
-|------|--------|
-| بهبود تجربه Basic Mode | وضعیت واضح‌تر و جریان‌های راهنما |
-| بهبود تجربه Pro Mode | شفافیت عملیات و مسیرهای حذف/ریست امن‌تر |
-| هم‌ترازی ترجمه‌های ۱۰ زبانه | اپ‌ها و وب‌سایت |
-| نزدیک‌کردن قابلیت‌های اندروید به Pro ویندوز | CDN و برخی عملیات پیشرفته هنوز اولویت ویندوز دارند |
-| پایداری تحویل روی هاست‌ها | آپلود/آپدیت پایدارتر |
+### پلتفرم و انتشار
 
----
+- نصب‌کننده و کنسول عملیاتی دسکتاپ ویندوز — **Black Fox Vpn Installer** نسخه 1.3.0 Build 202  
+- اپ عملیاتی اندروید — **BlackFox Vpn Android** نسخه 0.4.13 Build 21  
+- ابزار همراه اندروید — **Black Fox Config Builder** نسخه 1.1.3 Build 7  
+- وب‌سایت رسمی و دو میزبان آپدیت (`foxnext.net` و `blackfoxupdate.ir`)  
+- صفحات سیاست حریم خصوصی فارسی و انگلیسی روی foxnext.net  
 
-## Planned (برنامه‌های آینده)
+### عملیات اصلی (ویندوز و اندروید)
 
-| مورد | توضیح |
-|------|--------|
-| نسخه macOS | به‌زودی |
-| انتشار در Google Play برای اندروید | **Coming Soon** (دانلود APK از وب‌سایت هم‌اکنون فعال است) |
-| ادامه Workflow از مراحل میانی | UI امن‌تر برای ادامه از checkpoint |
-| Backup و Restore مستقل زیرساخت | فراتر از اسنپ‌شات Move Central |
-| زنجیره تونل طولانی‌تر | مقیاس‌پذیری multi-hop |
-| گزارش ترافیک و uptime | دید عملیاتی |
-| Remote management API | کنترل برنامه‌ای |
-| ربات تلگرام | کمک عملیاتی آینده |
+- حالت‌های Basic و Pro  
+- راه‌اندازی Central Server / Connect SSH / Full Deploy  
+- مدیریت Tunnel Server در Pro  
+- مدیریت Exit Server (Basic: دو اسلات · Pro: تا شش خروجی)  
+- تونل اصلی WireGuard به‌همراه GRE fallback  
+- ابزارهای Configure Panel  
+- کمک‌کننده‌های نصب WireGuard و 3X-UI  
 
----
+### امکانات پیشرفته Pro
 
-## ماتریس پلتفرم
+- مدیریت Domain و Subdomain با اتوماسیون DNS (Cloudflare و ArvanCloud)  
+- اتوماسیون CDN در **Pro ویندوز** (ArvanCloud، Cloudflare، KeyCDN، Other)  
+- **Move Central Server روی ویندوز و اندروید (Pro)**  
+  - اتصال مجدد Tunnel Serverها و Exit Serverها به مرکزی جدید  
+  - انتقال خودکار کلاینت‌های پنل 3X-UI از طریق snapshot و restore  
+  - ساخت بکاپ محلی در مسیر انتقال  
+- مسیر بکاپ مهاجرتی که توسط Move Central استفاده می‌شود  
 
-| پلتفرم | محصول | وضعیت |
-|--------|--------|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 202) |
-| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 21) |
-| Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
-| Android | انتشار Google Play | **Coming Soon** |
-| macOS | Black Fox Vpn | **Coming Soon** |
+### لایسنس
 
----
+- تأیید پرداخت آنلاین (TX Hash / USDT)  
+- کدهای فعال‌سازی آفلاین  
+- **فعال‌سازی مجدد لایسنس** در صفحه ثبت‌نام  
+  - پس از حذف و نصب مجدد برنامه روی **همان دستگاه**، کاربر فقط دکمه **فعال‌سازی مجدد (Reactivation)** را می‌زند  
+  - برنامه با اثرانگشت دستگاه، سابقه فعال‌سازی را از سرویس رسمی بازیابی می‌کند  
+  - دیگر لازم نیست کاربر کد لایسنس را فقط برای بازیابی پس از نصب مجدد روی همان دستگاه دائماً نگهداری کند  
 
-## Basic در برابر Pro (وضعیت فعلی)
+### بومی‌سازی
 
-<p align="center">
-  <img src="assets/dashboard-basic.png" alt="داشبورد Basic" width="360">
-  &nbsp;
-  <img src="assets/dashboard-pro.png" alt="داشبورد Pro" width="360">
-</p>
+- پشتیبانی از **۱۰ زبان:** انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی و هندی  
+- پوشش مشترک بومی‌سازی در اپ‌ها و وب‌سایت  
 
-| قابلیت | Basic | Pro |
-|--------|-------|-----|
-| Central Server | بله | بله |
-| Exit Servers | ۱–۲ | ۱–۶ |
-| Tunnel Servers | خیر | بله |
-| Domain / DNS | خیر | بله |
-| CDN | خیر | بله (ویندوز) |
-| Move Central Server | خیر | بله |
-| WireGuard + GRE | بله | بله |
+### مستندات و سطوح برند
+
+- README انگلیسی همراه با بخش کامل فارسی  
+- ROADMAP انگلیسی و فارسی  
+- WHITEPAPER انگلیسی و فارسی  
+- راهنماهای وب‌سایت برای Basic / Pro / Registration / Keys / Config Builder  
 
 ---
 
-## لینک‌ها
+## در حال انجام
 
-- وب‌سایت: [foxnext.net](https://foxnext.net)
-- حریم خصوصی: [foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)
-- دانلود ویندوز / اندروید / Config Builder از وب‌سایت رسمی
-- تلگرام: [@blackFoxVPNN](https://t.me/blackFoxVPNN)
-- مخزن: [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
+- نزدیک‌تر کردن عمق عملیاتی اندروید و ویندوز (جزئیات UI و جریان‌های حاشیه‌ای)  
+- سخت‌کردن تجربه کاربری برای عملیات طولانی Deploy و Move  
+- بهبود پایداری SSH، همگام‌سازی پنل و بررسی آپدیت  
+- همگام‌سازی محتوای وب‌سایت با رفتار واقعی محصول  
+- کاهش تفاوت‌های باقی‌مانده بین ابزار CDN ویندوز و دامنه Pro اندروید  
 
 ---
 
-## Support the Project
+## برنامه‌ریزی‌شده
 
-اگر BlackFox VPN Installer برای شما مفید است، با دادن یک Star به Repository از توسعه Black Fox Group حمایت کنید.
+### کوتاه‌مدت
 
-- Star the Repository
-- Report Bugs
-- Suggest Features
-- Share the Project
-- Support the Development
+- انتشار رسمی **BlackFox Vpn Android** در Google Play (از Coming Soon به منتشرشده)  
+- ابزار Backup / Restore مستقل‌تر فراتر از بکاپ مهاجرت Move Central  
+- رابط ازسرگیری میانی برای استقرارهای قطع‌شده  
+- تشخیص‌پذیری بهتر خطا و پیام‌های بازیابی واضح‌تر برای اپراتور  
+
+### میان‌مدت
+
+- نسخه macOS از Black Fox Vpn (به‌زودی)  
+- پرداخت عمیق‌تر جریان‌های چند CDN روی ویندوز  
+- افزودن ارائه‌دهنده DNS / CDN بیشتر در صورت تقاضای روشن  
+- ردپای ممیزی قوی‌تر برای Move Central و فعال‌سازی مجدد لایسنس  
+
+### بلندمدت
+
+- ابزارهای اپراتوری چندمنطقه‌ای گسترده‌تر  
+- اتوماسیون عمیق‌تر پنل و چرخه عمر کلاینت  
+- پلتفرم‌ها و کانال‌های بسته‌بندی بیشتر بر اساس تقاضا  
+
+---
+
+## چیزهایی که فعلاً هدف نیستند
+
+- تبدیل این مجموعه به کلاینت VPN مصرفی برای کاربر نهایی  
+- ادعای انتشار Google Play یا macOS قبل از آماده بودن واقعی  
+- مستند کردن امکاناتی که در سورس فعلی ویندوز/اندروید وجود ندارد  
+
+---
+
+## اسناد مرتبط
+
+- [README.md](../README.md)  
+- [WHITEPAPER.fa.md](WHITEPAPER.fa.md)  
+- [WHITEPAPER.en.md](WHITEPAPER.en.md)  
+- [ROADMAP.en.md](ROADMAP.en.md)  
+- [Mobile/README.md](../Mobile/README.md)  
+
+---
 
 © Black Fox Security Team

@@ -1,290 +1,181 @@
-﻿# Whitepaper — Black Fox Vpn Installer
+﻿# Black Fox Vpn Installer — Whitepaper
 
-**Version:** 1.3.0 | **Build:** 202 | **Updated:** July 2026
-
-[نسخه فارسی](WHITEPAPER.fa.md)
-
----
-
-## 1. Executive Summary
-
-**Black Fox Vpn Installer** is not a simple VPN client.
-
-It is a **suite of server management and deployment tools** for:
-
-- Server Deployment Automation  
-- Multi-Server Infrastructure Management  
-- VPN Infrastructure Configuration  
-- Central Server Management  
-- Tunnel Management  
-- Exit Server Management  
-- Backup and Restore (as part of Central Server migration)  
-
-The product family currently ships on **Windows** and **Android**, with a dedicated **Config Builder** for Android. A **macOS** edition is planned. Google Play distribution for Android is **Coming Soon**; the Android APK is already available from the official website.
-
-Official site: [https://foxnext.net](https://foxnext.net)
+**Last updated:** 2026-07-19  
+**Product family:** Black Fox Vpn Installer (Windows) · BlackFox Vpn Android · Black Fox Config Builder  
+**Current releases:** Windows **v1.3.0 (Build 202)** · Android **v0.4.13 (Build 21)** · Config Builder **v1.1.3 (Build 7)**  
+**Website:** [https://foxnext.net](https://foxnext.net)  
+**GitHub:** [https://github.com/balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
 
 ---
 
-## 2. Problem Statement
+## 1. Purpose
 
-Building multi-location VPN infrastructure usually requires:
+Black Fox Vpn Installer is a **server deployment and operations suite**, not a consumer VPN client.
 
-- Manual WireGuard installation and routing  
-- 3X-UI panel setup and inbound management  
-- SSH, firewall, and credential handling  
-- Connecting foreign exit servers to a central hub  
-- Optional CDN / DNS automation  
+It exists to help operators in constrained networks deploy and manage multi-location VPN infrastructure built on:
 
-For operators without deep Linux expertise, this process is slow, fragile, and hard to repeat safely.
+- **3X-UI (Sanaei)** as the panel layer  
+- **WireGuard** as the primary tunnel  
+- **GRE** as a fallback path when WireGuard cannot sustain the route  
 
----
-
-## 3. Solution
-
-Black Fox Group applications reduce complex multi-server work to guided graphical workflows.
-
-From a Windows PC or Android device, operators can install and manage:
-
-- 3X-UI (Sanaei) panel  
-- WireGuard  
-- Exit and tunnel topology  
-- Domain / CDN automation (Pro)  
-- Central Server migration with client continuity  
-
-<p align="center">
-  <img src="assets/page-0.png" alt="Basic Mode vs Pro Mode overview" width="650">
-</p>
+The product goal is to remove most of the repetitive Linux, SSH, panel, DNS, and tunnel work from day-to-day operations.
 
 ---
 
-## 4. Architecture
+## 2. Product surfaces
 
-High-level chain:
+| Surface | Full product name | Role | Download |
+|---------|-------------------|------|----------|
+| Windows | **Black Fox Vpn Installer** | Full desktop operations console | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| Android | **BlackFox Vpn Android** | Mobile operations app (Basic + Pro) | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Android companion | **Black Fox Config Builder** | Config construction helper | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| Google Play | BlackFox Vpn Android listing | Distribution channel | **Coming Soon** |
+| macOS | Black Fox Vpn | Future desktop edition | **Coming Soon** |
+
+---
+
+## 3. Operating model
+
+### Basic Mode
+
+Basic Mode targets faster, smaller deployments:
+
+- Central Server setup  
+- SSH connect and Full Deploy  
+- Up to two Exit servers  
+- Panel configuration helpers  
+- Core install helpers for WireGuard and 3X-UI  
+
+### Pro Mode
+
+Pro Mode targets larger multi-hop infrastructures:
+
+- Central Server  
+- Tunnel Server  
+- Up to six Exit servers  
+- WireGuard + GRE  
+- Domain / DNS management  
+- CDN automation on Windows  
+- **Move Central Server on Windows and Android**  
+- Migration backup during central relocation  
 
 ```text
 Central Server
       ↓
-Tunnel Server (Pro, optional multi-hop)
+Tunnel Server
       ↓
 Exit Server
       ↓
-Client Infrastructure (panel clients / end users)
+Client Infrastructure
 ```
 
-### 4.1 Basic Mode
+---
 
-Designed for operators who need a simpler and faster path:
+## 4. Move Central Server
 
-```text
-[Operator App] → SSH → [Central: WireGuard + 3X-UI]
-                              │
-                    ┌─────────┴─────────┐
-                    ▼                   ▼
-              [Exit 1]            [Exit 2]
-```
+Relocating the central role used to mean rebuilding tunnels, re-binding exits, and manually restoring panel clients.
 
-### 4.2 Pro Mode
+**Move Central Server** automates that relocation in Pro Mode on **both Windows and Android**.
 
-Designed for advanced multi-server infrastructure:
+Operator flow:
 
-```text
-[Central] → [Tunnel…] → [Exit 1..6]
-```
+1. Open Operations in Pro Mode  
+2. Choose Move Central Server  
+3. Enter the new central server details  
+4. Let the suite reconnect tunnel and exit roles to the new central  
+5. Allow automated transfer of 3X-UI panel clients from the migration snapshot  
+6. Keep the local migration backup created during the move  
 
-- Tunnel servers act as relays  
-- Exit servers provide egress  
-- **WireGuard** is the primary path  
-- **GRE fallback** can be used when WireGuard fails  
-
-<p align="center">
-  <img src="assets/dashboard-basic.png" alt="Basic Mode dashboard" width="420">
-  &nbsp;
-  <img src="assets/dashboard-pro.png" alt="Pro Mode dashboard" width="420">
-</p>
+This is an active Android feature as well as a Windows feature. Documentation that lists Move Central as Windows-only is outdated.
 
 ---
 
-## 5. Product Modes
+## 5. Licensing and Reactivation
 
-### Basic Mode
+Licensing supports three practical paths:
 
-For users who need a simpler, faster structure:
+1. Online verification through payment / TX Hash  
+2. Offline activation codes  
+3. **Reactivation** after reinstall on the same device  
 
-- Central Server setup  
-- Full Deploy  
-- Exit servers (limited slots)  
-- Configure Panel  
-- Core install helpers (WireGuard / 3X-UI)  
+### Why Reactivation exists
 
-### Pro Mode
+Operators often uninstall and reinstall the app. Requiring permanent storage of offline codes for that common case creates friction and support load.
 
-For advanced multi-server operations:
+### Current reactivation behavior
 
-- Central Server  
-- Tunnel Server  
-- Exit Server (up to 6)  
-- WireGuard + GRE  
-- Domain / DNS management  
-- CDN providers (Windows Pro)  
-- Move Central Server  
-- Migration backup + automated panel client transfer  
+On the Registration screen:
 
----
+1. Reinstall the app on the **same device**  
+2. Open Registration  
+3. Press **Reactivation** (English) / **فعال‌سازی مجدد** (Persian)  
 
-## 6. Platform Releases
+The app uses the device’s machine fingerprint to query the official reactivation service. If a valid prior activation record exists for that device, access is restored without forcing the user to keep and re-enter a stored license code for that recovery path.
 
-| Platform | Product | Status |
-|----------|---------|--------|
-| Windows | Black Fox Vpn Installer v1.3.0 (Build 202) | Available |
-| Android | BlackFox Vpn Android v0.4.13 (Build 21) | Available — download from [foxnext.net](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
-| Android | Google Play listing | **Coming Soon** |
-| Android | Black Fox Config Builder v1.1.3 (Build 7) | Available |
-| macOS | Black Fox Vpn | Coming Soon |
+Important clarifications:
 
-<p align="center">
-  <img src="assets/android-dashboard.png" alt="BlackFox Vpn Android" width="520">
-</p>
+- Reactivation is for previously activated devices recorded by the official service  
+- Online TX and offline codes remain available  
+- Local Windows vault restore (if present) is a separate local-device mechanism and must not be confused with server reactivation  
+- Reactivation does not invent a new license; it restores a known device-bound activation record  
 
-<p align="center"><em>Android — BlackFox Vpn Android is released and available from the official website. Google Play publication is Coming Soon.</em></p>
+Current public website pricing reference: Basic **19 USDT** · Pro **33 USDT** (confirm on site).
 
 ---
 
-## 7. Supported Languages
+## 6. Domains, DNS, and CDN
 
-BlackFox Group applications are designed for a global audience and support **10 major living languages**:
+Pro Mode includes domain/subdomain management with DNS automation for:
 
-English, Persian (Farsi), Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, and Hindi.
+- Cloudflare  
+- ArvanCloud  
 
-This coverage applies across current app editions and the website (`foxnext.net`).
-
----
-
-## 8. Core Technologies
-
-| Layer | Technology |
-|-------|------------|
-| Windows client | Go + Fyne |
-| Android client | Flutter |
-| Tunnel | WireGuard (primary), GRE (fallback) |
-| Panel | 3X-UI (Sanaei) |
-| Egress | microsocks on exit servers |
-| Transport | SSH (password or key), proxy-aware |
-| Updates | `foxnext.net` + `blackfoxupdate.ir` |
-| Locales | 10 shared languages |
-
----
-
-## 9. Domain, CDN, and Migration
-
-### Domain / DNS (Pro)
-
-Supported DNS automation providers include **Cloudflare** and **ArvanCloud**.
-
-### CDN (Pro, Windows)
-
-Supported CDN providers in the current Windows Pro UI:
+Windows Pro additionally exposes CDN operations for:
 
 - ArvanCloud  
 - Cloudflare  
 - KeyCDN  
 - Other CDN  
 
-### Move Central Server (Pro)
-
-Pro Mode includes **Move Central Server** to relocate the central role while preserving operational continuity:
-
-- Infrastructure snapshot / backup during move  
-- Automated transfer of Central Server panel clients  
-- Designed to keep client access continuous through migration  
-
-Broader standalone Backup & Restore tooling remains on the roadmap beyond Move Central.
+Android Pro currently focuses on core topology operations and Move Central; Windows remains the deeper CDN automation surface.
 
 ---
 
-## 10. Security Model
+## 7. Localization
 
-- SSH authentication via password or private key  
-- Host key verification to reduce MITM risk  
-- Machine-bound licensing  
-- Sensitive credentials are not written to application logs  
-- Operations run against the operator’s own servers  
+BlackFox Group applications and the website support **10 languages**:
+
+English, Persian, Russian, Chinese, German, Uzbek, Turkish, Indonesian, Ukrainian, Hindi.
 
 ---
 
-## 11. Privacy Policy
+## 8. Privacy and updates
 
-Black Fox Group publishes a dedicated Privacy Policy for the product family.
+- Privacy Policy EN: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
+- Privacy Policy FA: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
+- Update hosts: `foxnext.net` and `blackfoxupdate.ir`  
 
-Users can review how data handling is described on the official pages:
-
-- English: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
-- Persian: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
-
-The Privacy Policy is maintained separately from this whitepaper and should be treated as the authoritative privacy statement.
+Treat the published Privacy Policy pages as the authoritative source.
 
 ---
 
-## 12. Licensing
+## 9. What this suite is not
 
-License tiers are offered for Basic and Pro access and verified through USDT payment flows / license codes.
-
-Current public website pricing should be checked on [foxnext.net](https://foxnext.net) (Basic and Pro USDT tiers).
-
----
-
-## 13. Updates
-
-Applications refresh metadata from:
-
-1. `http://blackfoxupdate.ir` (primary where available)  
-2. `https://foxnext.net` (secondary / public host)  
-
-Typical files:
-
-- `/version.json`  
-- `/news.json`  
-- `/wallet.json`  
+- Not a simple end-user VPN client  
+- Not a claim that Google Play is already live  
+- Not a claim that macOS is already shipping  
+- Not a documentation surface for unimplemented features  
 
 ---
 
-## 14. Target Audience
+## 10. Related documents
 
-- Operators who need a private multi-location panel  
-- Teams running commercial VPN infrastructure  
-- Administrators who prefer guided automation over manual Linux work  
-
----
-
-## 15. Roadmap Reference
-
-See [ROADMAP.en.md](ROADMAP.en.md) for Completed / In Progress / Planned items, including macOS and Google Play (Coming Soon).
+- [README.md](../README.md)  
+- [ROADMAP.en.md](ROADMAP.en.md)  
+- [ROADMAP.fa.md](ROADMAP.fa.md)  
+- [WHITEPAPER.fa.md](WHITEPAPER.fa.md)  
+- [Mobile/README.md](../Mobile/README.md)  
 
 ---
 
-## 16. Links
-
-| Resource | URL |
-|----------|-----|
-| Website | [foxnext.net](https://foxnext.net) |
-| Privacy Policy | [foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html) |
-| Windows download | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
-| Android download | [APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
-| Config Builder | [GitHub](https://github.com/balckfoxgroup/blackfox-config-builder) |
-| Telegram | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
-| GitHub | [balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer) |
-| Email | support@foxnext.net |
-
----
-
-## Support the Project
-
-If BlackFox VPN Installer is useful to you, please support Black Fox Group development by starring the repository.
-
-- Star the Repository  
-- Report Bugs  
-- Suggest Features  
-- Share the Project  
-- Support the Development  
-
-© Black Fox Security Team — 2026
+© Black Fox Security Team

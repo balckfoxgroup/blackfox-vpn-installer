@@ -11,10 +11,10 @@
 
 <p align="center">
   <a href="https://foxnext.net">Website</a> •
-  <a href="https://foxnext.net/en/privacy.html">Privacy</a> •
-  <a href="https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe">Windows</a> •
-  <a href="https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk">Android</a> •
-  <a href="https://github.com/balckfoxgroup/blackfox-config-builder">Config Builder</a> •
+  <a href="https://foxnext.net/en/privacy.html">Privacy Policy</a> •
+  <a href="https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe">Black Fox Vpn-Installer-Setup.exe</a> •
+  <a href="https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk">BlackFox-VPN-Android-release.apk</a> •
+  <a href="https://foxnext.net/downloads/Black-Fox-Config-Builder.apk">Black-Fox-Config-Builder.apk</a> •
   <a href="https://t.me/blackFoxVPNN">Telegram</a> •
   <a href="https://github.com/balckfoxgroup/blackfox-vpn-installer">GitHub</a>
 </p>
@@ -33,21 +33,23 @@ It is a suite of **server management and deployment tools** for:
 - Central Server Management  
 - Tunnel Management  
 - Exit Server Management  
-- Backup and Restore during Central Server migration  
+- Move Central Server (Windows + Android)  
+- License Reactivation after reinstall  
+- Backup / restore during Central Server migration  
 
-The software is designed for environments with restricted global connectivity and helps operators deploy multi-location VPN infrastructure **without deep Linux expertise**.
+The suite is designed for networks with restricted global access and helps operators deploy multi-location VPN infrastructure without deep Linux expertise.
 
-### What's available now
+### Current releases
 
-| Platform | Product | Status |
-|----------|---------|--------|
-| Windows | Black Fox Vpn Installer | **Available** — v1.3.0 (Build 202) |
-| Android | BlackFox Vpn Android | **Available** — v0.4.13 (Build 21) |
-| Android | Black Fox Config Builder | **Available** — v1.1.3 (Build 7) |
-| Android | Google Play | **Coming Soon** |
-| macOS | Black Fox Vpn | **Coming Soon** |
+| Platform | Product | Status | Download |
+|----------|---------|--------|----------|
+| Windows | **Black Fox Vpn Installer** v1.3.0 (Build 202) | Available | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| Android | **BlackFox Vpn Android** v0.4.13 (Build 21) | Available | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Android | **Black Fox Config Builder** v1.1.3 (Build 7) | Available | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| Android | Google Play listing | **Coming Soon** | — |
+| macOS | Black Fox Vpn | **Coming Soon** | — |
 
-> The Android edition of BlackFox is released and can be downloaded from the official Black Fox Group website. Google Play publication is Coming Soon.
+> **BlackFox Vpn Android** is released and available from the official website. Google Play publication is **Coming Soon**.
 
 ---
 
@@ -55,13 +57,14 @@ The software is designed for environments with restricted global connectivity an
 
 - Automated 3X-UI (Sanaei) installation and panel configuration  
 - WireGuard primary tunnels + GRE fallback  
-- Basic Mode and Pro Mode workflows  
+- Basic Mode and Pro Mode  
 - Central / Tunnel / Exit server operations  
 - Domain & subdomain management (Pro)  
 - CDN automation on Windows Pro  
-- Move Central Server with automated panel client transfer  
+- **Move Central Server on Windows and Android (Pro)** with automated panel-client transfer  
+- **License Reactivation** after app reinstall on the same device (Registration → Reactivation)  
 - Dual update hosts (`foxnext.net` + `blackfoxupdate.ir`)  
-- Official website and Privacy Policy pages  
+- Official website + Privacy Policy  
 
 <p align="center">
   <img src="docs/assets/page-0.png" alt="Basic Mode vs Pro Mode" width="520">
@@ -71,7 +74,7 @@ The software is designed for environments with restricted global connectivity an
 
 ## 3. Basic Mode
 
-Basic Mode is for operators who need a **simpler and faster** structure:
+Basic Mode is for operators who need a simpler and faster structure:
 
 - Central Server Setup  
 - Connect SSH / Full Deploy  
@@ -80,39 +83,74 @@ Basic Mode is for operators who need a **simpler and faster** structure:
 - Core helpers (Install WireGuard / Install 3X-UI)  
 
 <p align="center">
-  <img src="docs/assets/dashboard-basic.png" alt="Basic Mode dashboard" width="520">
+  <img src="docs/assets/dashboard-basic.png" alt="Black Fox Vpn Installer — Basic Mode dashboard" width="520">
 </p>
 
 ---
 
 ## 4. Pro Mode
 
-Pro Mode is for **advanced multi-server infrastructure**:
+Pro Mode is for advanced multi-server infrastructure:
 
 - Central Server  
 - Tunnel Server  
 - Exit Server (up to 6)  
 - WireGuard + GRE  
 - Domain / DNS management  
-- CDN providers (Windows)  
-- Move Central Server  
-- Migration backup + automated client continuity  
+- CDN providers (Windows Pro)  
+- **Move Central Server (Windows + Android)**  
+- Migration backup + automated panel client continuity  
 
 <p align="center">
-  <img src="docs/assets/dashboard-pro.png" alt="Pro Mode dashboard" width="520">
+  <img src="docs/assets/dashboard-pro.png" alt="Black Fox Vpn Installer — Pro Mode dashboard" width="520">
 </p>
+
+### Move Central Server
+
+Using **Move Central Server**, relocating the central role no longer requires a full manual rebuild.
+
+Enter the new central server details and the operation runs automatically:
+
+- Tunnel servers and exit servers are reconnected to the new central  
+- 3X-UI panel client configuration is transferred automatically  
+- Local migration backup is created during the process  
+
+Available in **Pro Mode on both Windows and Android**.
 
 ---
 
-## 5. Android Version
+## 5. License Reactivation (important update)
+
+Latest licensing workflow no longer requires users to permanently keep offline license codes for normal reinstall cases.
+
+On the **Registration** screen:
+
+1. Reinstall the app on the **same device**  
+2. Open Registration  
+3. Press **Reactivation** / **فعال‌سازی مجدد**  
+
+The app checks the previous activation record bound to that device’s machine fingerprint and restores access when the record is valid.
+
+Notes:
+
+- Reactivation works for previously activated devices recorded by the official activation service  
+- Online TX verification and offline codes remain available as alternative paths  
+- Reactivation is designed so users do not need to store license codes only to recover after uninstall/reinstall on the same device  
+
+---
+
+## 6. Android Version
 
 **BlackFox Vpn Android is released.**
 
-- Download: [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk)  
-- Current version: **0.4.13 (Build 21)**  
-- Google Play: **Coming Soon**  
+| Item | Value |
+|------|-------|
+| Product name | BlackFox Vpn Android |
+| Version | 0.4.13 (Build 21) |
+| Download file | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Google Play | **Coming Soon** |
 
-Users can download the official Android build from the Black Fox Group website today. A Google Play listing is planned and will be announced when available.
+Android Pro Mode includes **Move Central Server** and **License Reactivation**, alongside Basic/Pro operations for Central / Tunnel / Exit management.
 
 <p align="center">
   <img src="docs/assets/android-dashboard.png" alt="BlackFox Vpn Android" width="48%">
@@ -123,26 +161,26 @@ Users can download the official Android build from the Black Fox Group website t
 <p align="center">
   <img src="docs/assets/android-vpn/basic-mode-duo.png" alt="Android Basic" width="32%">
   <img src="docs/assets/android-vpn/pro-mode-duo.png" alt="Android Pro" width="32%">
-  <img src="docs/assets/android-config-builder.png" alt="Config Builder" width="32%">
+  <img src="docs/assets/android-config-builder.png" alt="Black Fox Config Builder" width="32%">
 </p>
-
-<p align="center"><em>Android VPN · Config Builder</em></p>
 
 More Android notes: [Mobile/README.md](Mobile/README.md)
 
 ---
 
-## 6. Windows Version
+## 7. Windows Version
 
-- Product: **Black Fox Vpn Installer**  
-- Version: **1.3.0 (Build 202)**  
-- Download: [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe)  
+| Item | Value |
+|------|-------|
+| Product name | Black Fox Vpn Installer |
+| Version | 1.3.0 (Build 202) |
+| Download file | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
 
-Windows remains the full desktop operations console for Basic and Pro infrastructure workflows.
+Windows remains the full desktop operations console for Basic and Pro workflows, including CDN automation and Move Central Server.
 
 ---
 
-## 7. Supported Languages
+## 8. Supported Languages
 
 BlackFox Group applications are designed for a global audience and support **10 major living languages**:
 
@@ -161,7 +199,7 @@ Coverage includes current app editions and the website at [foxnext.net](https://
 
 ---
 
-## 8. Architecture
+## 9. Architecture
 
 ```text
 Central Server
@@ -173,11 +211,11 @@ Exit Server
 Client Infrastructure
 ```
 
-The application simplifies installation, configuration, and day-to-day management of this chain.
+The application simplifies installation, configuration, migration, and day-to-day management of this chain.
 
 ---
 
-## 9. WireGuard and GRE
+## 10. WireGuard and GRE
 
 - **WireGuard** is the primary tunnel technology  
 - **GRE** is available as a fallback path when WireGuard cannot sustain the route  
@@ -185,7 +223,7 @@ The application simplifies installation, configuration, and day-to-day managemen
 
 ---
 
-## 10. Central / Tunnel / Exit Servers
+## 11. Central / Tunnel / Exit Servers
 
 | Role | Purpose |
 |------|---------|
@@ -193,15 +231,15 @@ The application simplifies installation, configuration, and day-to-day managemen
 | Tunnel Server | Optional Pro multi-hop relay |
 | Exit Server | Internet egress location |
 
-Basic Mode focuses on Central + limited Exit slots. Pro Mode adds Tunnel servers and expanded Exit capacity.
+Basic Mode focuses on Central + limited Exit slots. Pro Mode adds Tunnel servers, expanded Exit capacity, Domain/CDN (Windows), and Move Central Server (Windows + Android).
 
 ---
 
-## 11. Domain Management
+## 12. Domain Management
 
 In Pro Mode, operators can manage domains/subdomains with DNS automation.
 
-Current DNS providers in product flows include:
+Current DNS providers include:
 
 - Cloudflare  
 - ArvanCloud  
@@ -215,44 +253,35 @@ Windows Pro also includes CDN operations for:
 
 ---
 
-## 12. Privacy Policy
+## 13. Privacy Policy
 
-A dedicated Privacy Policy is published on the official website.
-
-Users can review data-handling statements here:
+A dedicated Privacy Policy is published on the official website:
 
 - English: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
 - Persian: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
 
-Please treat those pages as the authoritative privacy source for Black Fox Group Installer products.
+Please treat those pages as the authoritative privacy source.
 
 ---
 
-## 13. Roadmap
+## 14. Roadmap & Whitepaper
 
-See the living roadmap documents:
-
-- English: [docs/ROADMAP.en.md](docs/ROADMAP.en.md)  
-- Persian: [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md)  
-
-Whitepaper:
-
-- English: [docs/WHITEPAPER.en.md](docs/WHITEPAPER.en.md)  
-- Persian: [docs/WHITEPAPER.fa.md](docs/WHITEPAPER.fa.md)  
-
-Highlights:
+- Roadmap EN: [docs/ROADMAP.en.md](docs/ROADMAP.en.md)  
+- Roadmap FA: [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md)  
+- Whitepaper EN: [docs/WHITEPAPER.en.md](docs/WHITEPAPER.en.md)  
+- Whitepaper FA: [docs/WHITEPAPER.fa.md](docs/WHITEPAPER.fa.md)  
 
 | Status | Examples |
 |--------|----------|
-| Completed | Windows + Android releases, 10 languages, Basic/Pro, Move Central, WireGuard/GRE, Domain/CDN |
+| Completed | Windows + Android releases, Move Central (Win+Android), License Reactivation, 10 languages, Basic/Pro, WireGuard/GRE |
 | In Progress | UX hardening, Android/Windows parity improvements |
-| Planned | macOS, Google Play listing, broader Backup/Restore, mid-workflow resume UI |
+| Planned | macOS, Google Play listing, broader standalone Backup/Restore tooling, mid-workflow resume UI |
 
 ---
 
-## 14. Support the Project
+## 15. Support the Project
 
-If BlackFox VPN Installer is useful to you, please support Black Fox Group development by giving the repository a star.
+If BlackFox VPN Installer is useful to you, please support Black Fox Group development by starring the repository.
 
 - Star the Repository  
 - Report Bugs  
@@ -264,33 +293,206 @@ Channels:
 
 - Telegram: [https://t.me/blackFoxVPNN](https://t.me/blackFoxVPNN)  
 - Website: [https://foxnext.net](https://foxnext.net)  
-- GitHub: [https://github.com/balckfoxgroup](https://github.com/balckfoxgroup)  
+- GitHub: [https://github.com/balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)  
 - Email: support@foxnext.net  
 
 ---
 
-## 15. License
+## 16. License
 
-Commercial product. Licensing tiers (Basic / Pro) are managed through the official registration flows on [foxnext.net](https://foxnext.net).
+Commercial product. Basic / Pro licensing is managed through official registration flows on [foxnext.net](https://foxnext.net).
+
+Current public website pricing: Basic **19 USDT** · Pro **33 USDT** (confirm on site).
 
 ---
 
-## فارسی (خلاصه)
+# فارسی
 
-Black Fox مجموعه ابزارهای **مدیریت و راه‌اندازی سرور** است، نه یک کلاینت VPN ساده. نسخه ویندوز و نسخه اندروید منتشر شده‌اند. Google Play برای اندروید **به‌زودی** است. macOS نیز در برنامه است.
+## ۱. معرفی پروژه
 
-| منبع | لینک |
-|------|------|
-| وب‌سایت | [foxnext.net](https://foxnext.net) |
-| حریم خصوصی | [foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html) |
-| ویندوز | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
-| اندروید | [APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
-| نقشه راه | [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md) |
-| وایت‌پیپر | [docs/WHITEPAPER.fa.md](docs/WHITEPAPER.fa.md) |
+**Black Fox Vpn Installer** یک کلاینت VPN ساده نیست.
 
-**۱۰ زبان:** انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی، هندی.
+این مجموعه، ابزارهای **مدیریت و راه‌اندازی سرور** برای این حوزه‌هاست:
 
-اگر این پروژه برای شما مفید است، با Star کردن Repository از توسعه Black Fox Group حمایت کنید.
+- اتوماسیون استقرار سرور  
+- مدیریت زیرساخت چندسروری  
+- پیکربندی زیرساخت VPN  
+- مدیریت Central Server  
+- مدیریت Tunnel Server  
+- مدیریت Exit Server  
+- انتقال Central Server (ویندوز و اندروید)  
+- فعال‌سازی مجدد لایسنس پس از نصب مجدد  
+- بکاپ و بازیابی در مسیر انتقال سرور مرکزی  
+
+این نرم‌افزار برای شرایطی طراحی شده که دسترسی به اینترنت جهانی محدود است و به شما کمک می‌کند بدون دانش عمیق لینوکس، زیرساخت VPN چندلوکیشن خود را راه‌اندازی و مدیریت کنید.
+
+### وضعیت انتشار فعلی
+
+| پلتفرم | محصول | وضعیت | دانلود |
+|--------|--------|--------|--------|
+| ویندوز | **Black Fox Vpn Installer** نسخه 1.3.0 (Build 202) | منتشر شده | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| اندروید | **BlackFox Vpn Android** نسخه 0.4.13 (Build 21) | منتشر شده | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| اندروید | **Black Fox Config Builder** نسخه 1.1.3 (Build 7) | منتشر شده | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| اندروید | انتشار در Google Play | **به‌زودی (Coming Soon)** | — |
+| macOS | Black Fox Vpn | **به‌زودی** | — |
+
+> نسخه Android برنامه BlackFox منتشر شده است و کاربران می‌توانند آن را از وب‌سایت رسمی Black Fox Group دانلود کنند. نسخه Android به‌زودی در Google Play نیز منتشر خواهد شد.
+
+---
+
+## ۲. امکانات
+
+- نصب و پیکربندی خودکار پنل 3X-UI (سنایی)  
+- تونل WireGuard به‌همراه GRE fallback  
+- حالت‌های Basic و Pro  
+- عملیات Central / Tunnel / Exit  
+- مدیریت Domain و Subdomain در Pro  
+- اتوماسیون CDN در Pro ویندوز  
+- **Move Central Server روی ویندوز و اندروید (Pro)** با انتقال خودکار کلاینت‌های پنل  
+- **فعال‌سازی مجدد لایسنس** پس از حذف و نصب مجدد روی همان دستگاه  
+- دو میزبان آپدیت: `foxnext.net` و `blackfoxupdate.ir`  
+- وب‌سایت رسمی و صفحه حریم خصوصی  
+
+---
+
+## ۳. Basic Mode
+
+برای کاربرانی که به ساختار ساده‌تر و سریع‌تر نیاز دارند:
+
+- راه‌اندازی Central Server  
+- اتصال SSH و Full Deploy  
+- سرورهای Exit (اسلات ۱ و ۲)  
+- Configure Panel  
+- ابزارهای کمکی نصب WireGuard و 3X-UI  
+
+---
+
+## ۴. Pro Mode
+
+برای مدیریت زیرساخت‌های پیشرفته و چندسروری:
+
+- Central Server  
+- Tunnel Server  
+- Exit Server (تا ۶ خروجی)  
+- WireGuard و GRE  
+- مدیریت Domain / DNS  
+- CDN (در نسخه ویندوز)  
+- **Move Central Server در ویندوز و اندروید**  
+- بکاپ مسیر انتقال و حفظ تداوم کلاینت‌های پنل  
+
+### انتقال Central Server
+
+با کلید **Move Central Server** دیگر لازم نیست انتقال سرور مرکزی را دستی و از صفر انجام دهید.
+
+اطلاعات سرور مرکزی جدید را وارد کنید؛ عملیات به‌صورت خودکار اجرا می‌شود:
+
+- تمام Tunnel Serverها و Exit Serverها به مرکزی جدید متصل می‌شوند  
+- پیکربندی کلاینت‌های پنل 3X-UI به‌صورت خودکار منتقل می‌شود  
+- در مسیر انتقال، بکاپ محلی ساخته می‌شود  
+
+این قابلیت در **Pro Mode ویندوز و اندروید** فعال است.
+
+---
+
+## ۵. فعال‌سازی مجدد لایسنس (تغییر مهم)
+
+در آخرین تغییرات نوع فعال‌سازی لایسنس، دیگر لازم نیست کاربر کد لایسنس را برای حالت عادی نصب مجدد دائماً نگهداری کند.
+
+روی صفحه **ثبت‌نام / Registration**:
+
+۱. برنامه را روی **همان دستگاه** دوباره نصب کنید  
+۲. وارد تب ثبت‌نام شوید  
+۳. فقط دکمه **فعال‌سازی مجدد (Reactivation)** را بزنید  
+
+برنامه سابقه فعال‌سازی همان دستگاه را از سرویس رسمی بررسی می‌کند و در صورت معتبر بودن، دسترسی را بازیابی می‌کند.
+
+نکته‌ها:
+
+- این مسیر برای دستگاهی کار می‌کند که قبلاً فعال شده و رکورد آن در سرویس فعال‌سازی ثبت شده باشد  
+- مسیرهای پرداخت آنلاین (TX Hash) و کد آفلاین همچنان به‌عنوان روش‌های جایگزین باقی هستند  
+- هدف این است که کاربر برای بازیابی پس از حذف/نصب مجدد، مجبور به نگهداری دائمی کد لایسنس نباشد  
+
+---
+
+## ۶. نسخه اندروید
+
+| مورد | مقدار |
+|------|--------|
+| نام کامل محصول | BlackFox Vpn Android |
+| نسخه | 0.4.13 (Build 21) |
+| فایل دانلود | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| Google Play | **به‌زودی** |
+
+در نسخه اندروید، علاوه بر عملیات Basic/Pro، قابلیت‌های **Move Central Server** و **فعال‌سازی مجدد لایسنس** نیز فعال هستند.
+
+---
+
+## ۷. نسخه ویندوز
+
+| مورد | مقدار |
+|------|--------|
+| نام کامل محصول | Black Fox Vpn Installer |
+| نسخه | 1.3.0 (Build 202) |
+| فایل دانلود | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+
+---
+
+## ۸. پشتیبانی از ۱۰ زبان
+
+محصولات Black Fox Group برای مخاطب بین‌المللی طراحی شده‌اند و از ۱۰ زبان زنده دنیا پشتیبانی می‌کنند:
+
+انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی و هندی.
+
+این پوشش شامل اپ‌های فعلی و وب‌سایت [foxnext.net](https://foxnext.net) است.
+
+---
+
+## ۹. معماری
+
+```text
+Central Server
+      ↓
+Tunnel Server
+      ↓
+Exit Server
+      ↓
+Client Infrastructure
+```
+
+---
+
+## ۱۰. حریم خصوصی
+
+سیاست حریم خصوصی به‌صورت جداگانه منتشر شده است:
+
+- فارسی: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
+- انگلیسی: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
+
+---
+
+## ۱۱. نقشه راه و وایت‌پیپر
+
+- [docs/ROADMAP.fa.md](docs/ROADMAP.fa.md)  
+- [docs/WHITEPAPER.fa.md](docs/WHITEPAPER.fa.md)  
+- [docs/ROADMAP.en.md](docs/ROADMAP.en.md)  
+- [docs/WHITEPAPER.en.md](docs/WHITEPAPER.en.md)  
+
+---
+
+## ۱۲. حمایت از پروژه
+
+اگر BlackFox VPN Installer برای شما مفید است، با دادن یک Star به Repository از توسعه Black Fox Group حمایت کنید.
+
+- Star the Repository  
+- Report Bugs  
+- Suggest Features  
+- Share the Project  
+- Support the Development  
+
+- تلگرام: [https://t.me/blackFoxVPNN](https://t.me/blackFoxVPNN)  
+- وب‌سایت: [https://foxnext.net](https://foxnext.net)  
+- گیت‌هاب: [https://github.com/balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)  
+- ایمیل: support@foxnext.net  
 
 ---
 

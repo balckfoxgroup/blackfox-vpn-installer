@@ -1,180 +1,181 @@
-﻿# وایت‌پیپر — Black Fox Vpn Installer
+﻿# وایت‌پیپر Black Fox Vpn Installer
 
-**نسخه:** 1.3.0 | **Build:** 202 | **به‌روزرسانی:** ژوئیه ۲۰۲۶
-
-[English version](WHITEPAPER.en.md)
-
----
-
-## ۱. خلاصه اجرایی
-
-**Black Fox Vpn Installer** یک کلاینت VPN ساده نیست.
-
-این محصول **مجموعه ابزارهای مدیریت و راه‌اندازی سرور** برای موارد زیر است:
-
-- Server Deployment Automation  
-- Multi-Server Infrastructure Management  
-- VPN Infrastructure Configuration  
-- Central Server Management  
-- Tunnel Management  
-- Exit Server Management  
-- Backup and Restore (در مسیر انتقال Central Server)  
-
-خانواده محصول هم‌اکنون روی **ویندوز** و **اندروید** منتشر شده و ابزار **Config Builder** اندروید نیز در دسترس است. نسخه **macOS** در برنامه است. انتشار در **Google Play** برای اندروید به‌صورت **Coming Soon** اعلام می‌شود؛ دانلود APK از وب‌سایت رسمی فعال است.
-
-وب‌سایت رسمی: [https://foxnext.net](https://foxnext.net)
+**آخرین به‌روزرسانی:** ۱۹ ژوئیه ۲۰۲۶  
+**خانواده محصول:** Black Fox Vpn Installer (ویندوز) · BlackFox Vpn Android · Black Fox Config Builder  
+**نسخه‌های فعلی:** ویندوز **v1.3.0 (Build 202)** · اندروید **v0.4.13 (Build 21)** · Config Builder **v1.1.3 (Build 7)**  
+**وب‌سایت:** [https://foxnext.net](https://foxnext.net)  
+**گیت‌هاب:** [https://github.com/balckfoxgroup/blackfox-vpn-installer](https://github.com/balckfoxgroup/blackfox-vpn-installer)
 
 ---
 
-## ۲. صورت‌مسئله
+## ۱. هدف
 
-راه‌اندازی زیرساخت VPN چندلوکیشن معمولاً نیازمند این کارهاست:
+Black Fox Vpn Installer یک **مجموعه استقرار و عملیات سرور** است، نه یک کلاینت VPN مصرفی برای کاربر نهایی.
 
-- نصب دستی WireGuard و مسیریابی  
-- راه‌اندازی پنل 3X-UI  
-- مدیریت SSH، فایروال و اعتبارنامه‌ها  
-- اتصال سرورهای خروجی به هاب مرکزی  
-- در صورت نیاز، اتوماسیون CDN / DNS  
+هدف این مجموعه کمک به اپراتورهایی است که در شبکه‌های محدود کار می‌کنند تا زیرساخت VPN چندلوکیشن را بر پایه این لایه‌ها راه‌اندازی و مدیریت کنند:
 
-برای اپراتورهایی که دانش عمیق لینوکس ندارند، این مسیر زمان‌بر و خطاپذیر است.
+- **3X-UI (سنایی)** به‌عنوان لایه پنل  
+- **WireGuard** به‌عنوان تونل اصلی  
+- **GRE** به‌عنوان مسیر پشتیبان وقتی WireGuard نمی‌تواند مسیر را پایدار نگه دارد  
 
----
-
-## ۳. راه‌حل
-
-برنامه‌های Black Fox Group عملیات پیچیده چندسروری را به جریان‌های گرافیکی قابل‌هدایت تبدیل می‌کنند.
-
-از ویندوز یا اندروید می‌توان این موارد را نصب و مدیریت کرد:
-
-- پنل 3X-UI (سنایی)  
-- WireGuard  
-- توپولوژی Exit و Tunnel  
-- اتوماسیون Domain / CDN (Pro)  
-- انتقال Central Server با حفظ تداوم کلاینت‌ها  
-
-<p align="center">
-  <img src="assets/page-0.png" alt="نمای Basic و Pro" width="650">
-</p>
+هدف محصول این است که بخش بزرگی از کارهای تکراری لینوکس، SSH، پنل، DNS و تونل را از عملیات روزمره حذف کند.
 
 ---
 
-## ۴. معماری
+## ۲. سطوح محصول
 
-زنجیره کلی:
+| سطح | نام کامل محصول | نقش | دانلود |
+|------|-----------------|-----|--------|
+| ویندوز | **Black Fox Vpn Installer** | کنسول کامل عملیات دسکتاپ | [Black Fox Vpn-Installer-Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
+| اندروید | **BlackFox Vpn Android** | اپ عملیاتی موبایل (Basic + Pro) | [BlackFox-VPN-Android-release.apk](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
+| ابزار همراه اندروید | **Black Fox Config Builder** | کمک‌کننده ساخت کانفیگ | [Black-Fox-Config-Builder.apk](https://foxnext.net/downloads/Black-Fox-Config-Builder.apk) |
+| Google Play | فهرست BlackFox Vpn Android | کانال توزیع | **به‌زودی** |
+| macOS | Black Fox Vpn | نسخه دسکتاپ آینده | **به‌زودی** |
+
+---
+
+## ۳. مدل عملیاتی
+
+### Basic Mode
+
+Basic Mode برای استقرارهای سریع‌تر و کوچک‌تر طراحی شده است:
+
+- راه‌اندازی Central Server  
+- اتصال SSH و Full Deploy  
+- حداکثر دو Exit Server  
+- ابزارهای پیکربندی پنل  
+- کمک‌کننده‌های نصب WireGuard و 3X-UI  
+
+### Pro Mode
+
+Pro Mode برای زیرساخت‌های چندپرشی و بزرگ‌تر طراحی شده است:
+
+- Central Server  
+- Tunnel Server  
+- حداکثر شش Exit Server  
+- WireGuard به‌همراه GRE  
+- مدیریت Domain / DNS  
+- اتوماسیون CDN روی ویندوز  
+- **Move Central Server روی ویندوز و اندروید**  
+- بکاپ مهاجرتی هنگام جابه‌جایی سرور مرکزی  
 
 ```text
 Central Server
       ↓
-Tunnel Server (Pro، اختیاری)
+Tunnel Server
       ↓
 Exit Server
       ↓
 Client Infrastructure
 ```
 
-### ۴.۱ Basic Mode
+---
 
-برای ساختار ساده‌تر و سریع‌تر:
+## ۴. انتقال Central Server
 
-- Central Server  
-- Exit محدود  
-- Configure Panel  
+جابه‌جایی نقش مرکزی قبلاً یعنی بازسازی دستی تونل‌ها، اتصال مجدد Exitها و بازیابی دستی کلاینت‌های پنل.
 
-### ۴.۲ Pro Mode
+**Move Central Server** این جابه‌جایی را در Pro Mode روی **ویندوز و اندروید** خودکار می‌کند.
 
-برای زیرساخت پیشرفته چندسروری:
+جریان کار اپراتور:
 
-- Central / Tunnel / Exit  
-- WireGuard + GRE  
-- Domain و CDN  
-- Move Central Server  
+۱. در Pro Mode بخش Operations را باز کنید  
+۲. گزینه Move Central Server را انتخاب کنید  
+۳. مشخصات سرور مرکزی جدید را وارد کنید  
+۴. اجازه دهید مجموعه، نقش‌های Tunnel و Exit را به مرکزی جدید وصل کند  
+۵. انتقال خودکار کلاینت‌های پنل 3X-UI از snapshot مهاجرتی انجام شود  
+۶. بکاپ محلی ساخته‌شده در مسیر انتقال را نگه دارید  
 
-<p align="center">
-  <img src="assets/dashboard-basic.png" alt="داشبورد Basic" width="420">
-  &nbsp;
-  <img src="assets/dashboard-pro.png" alt="داشبورد Pro" width="420">
-</p>
+این قابلیت روی اندروید هم فعال است و فقط مخصوص ویندوز نیست. هر مستندی که Move Central را فقط ویندوزی معرفی کند، قدیمی است.
 
 ---
 
-## ۵. انتشار پلتفرم‌ها
+## ۵. لایسنس و فعال‌سازی مجدد
 
-| پلتفرم | محصول | وضعیت |
-|--------|--------|--------|
-| Windows | Black Fox Vpn Installer v1.3.0 (Build 202) | Available |
-| Android | BlackFox Vpn Android v0.4.13 (Build 21) | Available از وب‌سایت |
-| Android | Google Play | **Coming Soon** |
-| Android | Config Builder v1.1.3 (Build 7) | Available |
-| macOS | Black Fox Vpn | Coming Soon |
+لایسنس در عمل سه مسیر دارد:
 
-<p align="center">
-  <img src="assets/android-dashboard.png" alt="نسخه اندروید" width="520">
-</p>
+۱. تأیید آنلاین از طریق پرداخت / TX Hash  
+۲. کدهای فعال‌سازی آفلاین  
+۳. **فعال‌سازی مجدد** پس از نصب مجدد روی همان دستگاه  
 
-> نسخه Android برنامه BlackFox منتشر شده است و کاربران می‌توانند آن را از وب‌سایت رسمی Black Fox Group دانلود کنند. نسخه Android به‌زودی در Google Play نیز منتشر خواهد شد.
+### چرا فعال‌سازی مجدد اضافه شد
+
+اپراتورها اغلب برنامه را حذف و دوباره نصب می‌کنند. اجبار به نگهداری دائمی کد آفلاین فقط برای همین حالت رایج، اصطکاک و بار پشتیبانی ایجاد می‌کرد.
+
+### رفتار فعلی فعال‌سازی مجدد
+
+در صفحه ثبت‌نام:
+
+۱. برنامه را روی **همان دستگاه** دوباره نصب کنید  
+۲. وارد Registration شوید  
+۳. دکمه **فعال‌سازی مجدد (Reactivation)** را بزنید  
+
+برنامه با اثرانگشت دستگاه به سرویس رسمی فعال‌سازی مجدد مراجعه می‌کند. اگر سابقه فعال‌سازی معتبر برای همان دستگاه وجود داشته باشد، دسترسی بازیابی می‌شود و کاربر مجبور نیست برای همین مسیر بازیابی، کد لایسنس را دائماً نگه دارد و دوباره وارد کند.
+
+توضیح‌های مهم:
+
+- فعال‌سازی مجدد برای دستگاهی کار می‌کند که قبلاً فعال شده و رکورد آن در سرویس رسمی ثبت شده باشد  
+- مسیرهای TX آنلاین و کد آفلاین همچنان موجودند  
+- بازیابی محلی vault در ویندوز (در صورت وجود) مکانیزمی جداگانه روی خود دستگاه است و نباید با فعال‌سازی مجدد سمت سرویس اشتباه گرفته شود  
+- فعال‌سازی مجدد لایسنس جدید نمی‌سازد؛ سابقه فعال‌سازی وابسته‌به‌دستگاه را بازیابی می‌کند  
+
+مرجع قیمت فعلی روی وب‌سایت عمومی: Basic **۱۹ USDT** · Pro **۳۳ USDT** (روی سایت تأیید کنید).
 
 ---
 
-## ۶. پشتیبانی از ۱۰ زبان
+## ۶. دامنه، DNS و CDN
 
-محصولات Black Fox Group برای مخاطب بین‌المللی طراحی شده‌اند و از **۱۰ زبان زنده دنیا** پشتیبانی می‌کنند:
+در Pro Mode مدیریت Domain و Subdomain با اتوماسیون DNS برای این ارائه‌دهنده‌ها وجود دارد:
+
+- Cloudflare  
+- ArvanCloud  
+
+در Pro ویندوز، عملیات CDN نیز برای این موارد در دسترس است:
+
+- ArvanCloud  
+- Cloudflare  
+- KeyCDN  
+- Other CDN  
+
+در Pro اندروید تمرکز فعلی روی عملیات توپولوژی اصلی و Move Central است؛ سطح عمیق‌تر اتوماسیون CDN همچنان روی ویندوز قرار دارد.
+
+---
+
+## ۷. بومی‌سازی
+
+اپلیکیشن‌های Black Fox Group و وب‌سایت از **۱۰ زبان** پشتیبانی می‌کنند:
 
 انگلیسی، فارسی، روسی، چینی، آلمانی، ازبکی، ترکی، اندونزیایی، اوکراینی و هندی.
 
 ---
 
-## ۷. Domain، CDN و انتقال Central
+## ۸. حریم خصوصی و آپدیت
 
-- DNS: Cloudflare و ArvanCloud  
-- CDN (ویندوز Pro): ArvanCloud، Cloudflare، KeyCDN، Other CDN  
-- Move Central Server: بکاپ مسیر انتقال + انتقال خودکار کلاینت‌های پنل با هدف حفظ دسترسی  
+- سیاست حریم خصوصی فارسی: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
+- سیاست حریم خصوصی انگلیسی: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
+- میزبان‌های آپدیت: `foxnext.net` و `blackfoxupdate.ir`  
 
-Backup/Restore گسترده‌تر به‌عنوان ابزار مستقل در نقشه راه باقی است.
-
----
-
-## ۸. حریم خصوصی (Privacy Policy)
-
-سیاست حریم خصوصی به‌صورت جداگانه منتشر شده است:
-
-- فارسی: [https://foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html)  
-- انگلیسی: [https://foxnext.net/en/privacy.html](https://foxnext.net/en/privacy.html)  
-
-کاربران می‌توانند جزئیات مرتبط با داده و حریم خصوصی را در همان صفحه رسمی مطالعه کنند.
+صفحات منتشرشده Privacy Policy منبع معتبر حریم خصوصی هستند.
 
 ---
 
-## ۹. امنیت و لایسنس
+## ۹. این مجموعه چیست و چه چیزی نیست
 
-- احراز هویت SSH با رمز یا کلید  
-- لایسنس وابسته به دستگاه  
-- عدم ثبت رمزها در لاگ برنامه  
-- سطوح Basic / Pro با جریان USDT (قیمت به‌روز را در وب‌سایت ببینید)
-
----
-
-## ۱۰. لینک‌ها
-
-| منبع | آدرس |
-|------|------|
-| وب‌سایت | [foxnext.net](https://foxnext.net) |
-| حریم خصوصی | [foxnext.net/fa/privacy.html](https://foxnext.net/fa/privacy.html) |
-| دانلود ویندوز | [Setup.exe](https://foxnext.net/downloads/Black%20Fox%20Vpn-Installer-Setup.exe) |
-| دانلود اندروید | [APK](https://foxnext.net/downloads/BlackFox-VPN-Android-release.apk) |
-| Config Builder | [GitHub](https://github.com/balckfoxgroup/blackfox-config-builder) |
-| تلگرام | [@blackFoxVPNN](https://t.me/blackFoxVPNN) |
-| نقشه راه | [ROADMAP.fa.md](ROADMAP.fa.md) |
+- کلاینت ساده VPN برای کاربر نهایی نیست  
+- ادعای زنده بودن Google Play نیست  
+- ادعای انتشار فعلی macOS نیست  
+- محل ثبت امکانات پیاده‌سازی‌نشده نیست  
 
 ---
 
-## Support the Project
+## ۱۰. اسناد مرتبط
 
-اگر BlackFox VPN Installer برای شما مفید است، با دادن یک Star به Repository از توسعه Black Fox Group حمایت کنید.
+- [README.md](../README.md)  
+- [ROADMAP.fa.md](ROADMAP.fa.md)  
+- [ROADMAP.en.md](ROADMAP.en.md)  
+- [WHITEPAPER.en.md](WHITEPAPER.en.md)  
+- [Mobile/README.md](../Mobile/README.md)  
 
-- Star the Repository  
-- Report Bugs  
-- Suggest Features  
-- Share the Project  
-- Support the Development  
+---
 
-© Black Fox Security Team — ۲۰۲۶
+© Black Fox Security Team
